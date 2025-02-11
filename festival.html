@@ -1,0 +1,340 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <title>
+Portfolio_CDoolan_Festival
+    </title>
+
+     <meta name="description" content="Christina Doolan's design portfolio and Resume. Works include projects from executive eduction internship, innovation design club, Adobe, and more.">
+     
+<link rel= "stylesheet" href= "shared.css">
+
+<style>
+
+/* top section */
+    .hero-section {
+        position: relative;
+        background-image: url('festival/phone_pattern.png'); 
+        background-size: cover;
+        background-position: center;
+        height: 650px; 
+        width: 100%;
+        background-attachment: fixed; /* Makes background stay in place */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+          
+
+    }
+    .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 650px;
+        background: rgba(0, 0, 0, 0.7); /* Adjust opacity for better readability */
+    }
+
+    .hero-content {
+        position: relative; /* Keeps text above overlay */
+        z-index: 1;
+    }
+      #name {
+        margin: 0;
+        font-family: 'AbangFashion', sans-serif;
+         font-size: 8em;
+    }
+    .left {
+        text-align: left;
+        margin-left: 200px;
+        margin-right:50px;
+        margin-top:100px;
+    }
+    .right {
+        text-align: left;
+        margin-right: 200px;
+        margin-top:100px;
+    }
+h4 {
+    margin-bottom: 20px;
+}
+.line {
+    width: 0;
+    height: 10px;
+    background-color: #D5E151;
+    animation: expand 1.5s ease-out forwards;
+    animation-delay: 0.6s; /* Delay ensures smooth appearance */
+}
+
+@keyframes expand {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50px;
+    }
+}
+
+
+#heroImg {
+    width:100vw;
+
+}
+
+h2 {
+    font-family: 'AbangFashion', sans-serif;
+}
+
+#strip {
+    background-color: #F49B6D;
+    height:150px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+ #strip a:hover {
+           
+            color: white;
+        }
+.tag {
+    margin: 20px;
+}
+#banner {
+    margin-top: -75px;
+}
+
+.sectionHeader {
+    height: 350px;
+    background-color: #F49B6D;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+          
+
+    .researchImg {
+        max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    }
+ .container1 {
+            width: 100%;
+            height: 80vh; /* Adjust as needed */
+            display: flex;
+            margin-right: auto;
+    margin-left: auto;
+
+        }
+
+ iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+
+        }
+        #festivalUserFlow {
+            margin-bottom: 50px;
+        }
+
+    
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+
+<!-- navigation -->
+
+<div id= "navbar">
+        <a href= "home.html" >
+        <img id="logo" src= "assets/img/personal_logo.svg" alt="CJD"> </a>
+    
+        <a href= "home.html#work">UX/UI </a>
+        
+        <a href= "resume.html">About me</a>
+        <div id="linkedIn">
+            <a href= "https://www.linkedin.com/in/christina-doolan-36b1a224a/" target =_blank>
+                <img id="linked" src= "assets/img/linkedin.png" alt= "linkedin">
+            </a>
+        </div>
+    </div> <!-- nav bar -->
+
+
+
+<!-- Hero section -->
+
+    <section class="hero-section">
+        <div class="hero-content">
+           
+            <h1 id="name"> LA Food Festival </h1>
+            
+            
+            
+        </div>
+    </section> <!-- hero section -->
+
+
+<div class="twoSections">
+                
+        <div class="left">
+            <h4> The Challenge </h4>
+            <div class="line"></div>
+
+            <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const line = document.querySelector(".line");
+    
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                line.style.animation = "expand 1.5s ease-out forwards";
+            }
+        });
+    });
+
+    observer.observe(line);
+});
+</script>
+
+
+            <p >The LA Food Festival attracts thousands of food lovers, but navigating the event can be overwhelming. Attendees need real-time updates, easy vendor access, and seamless event navigation—all in one place. Our team took on the challenge of designing an intuitive, all-in-one app to enhance the festival experience for both families and food enthusiasts.</p> 
+
+            
+
+            <p> 
+            <strong>Duration: </strong>2 months</p>
+           
+        </div> <!-- leftsection of home screen -->
+
+
+
+        <div class="right">
+            <h4> My Role </h4>
+            <div class="line"></div>
+            <p> As a Web Developer, Co-App Designer, and Co-Graphic Designer, I helped craft a user-friendly interface, ensuring smooth navigation and visually appealing layouts. From wireframes to final design, I worked on creating an engaging, functional, and cohesive digital experience for festival-goers. </p>
+
+            <p> <strong>Tools:</strong> Figma, Illustrator, React.js, HTML, & CSS </p>
+        </div> <!-- right side text -->
+
+    </div> <!-- La Food Festival section -->
+
+   
+
+<!-- 
+hero image section -->
+
+
+<img id="heroImg" src = "festival/festivalMain.png">
+
+
+
+
+
+<div id="strip">
+        <a href="festival.html#screen">Screencap</a>
+        
+        <a href="festival.html#festivalUserPersona">User Persona</a>
+        <a href="festival.html#festivalUserFlow">User Flow</a>
+       <!--  <a href="festival.html#festivalUXProblems">UX/UI Problems and Solutions</a> -->
+        <a href="festival.html#festivalWireframes">Wireframes</a><a href="festival.html#festivalReact">ReactJS Coded App</a>
+    </div>
+
+
+
+<video id="screen" class="screencap" autoplay muted loop controls>
+        <source src="festival/festivalScreenCap.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+
+<div class=sec3 id="festivalSec3">
+    <div class=sectionHeader>
+        <h2> User Flow & User Persona </h2>
+    </div>
+     </div>
+    <img id= "festivalUserPersona"class="userPersona" src="festival/festivalUserPersona.svg" alt="face image">
+  </div> <!-- end of user flows and personas section -->
+
+    <div class="userFlow" id="festivalUserFlow">
+     <img id="userFlowImage" class="userFlowImg" src="festival/festivalUserFlow.svg" alt="User Flow Image">
+    </div>
+    
+
+   
+
+ 
+    
+   
+   
+  </div><!-- end of problems/solutions section -->
+
+
+
+<div class=sec5 id="festivalWireframes">
+    <div class=sectionHeader>
+        <h2> Wireframes </h2>
+    </div>
+    <div class="secContent">
+    <h3> Lo-fi Designs </h3>
+    <div class="userFlow">
+    <img class="wireframeImg" src="festival/festivalLofi.png" alt="face image">
+  </div>
+  <h3> Mid-fi Designs </h3>
+    <div class="userFlow">
+    <img class="wireframeImg" src="festival/festivalMidfi.png" alt="face image">
+  </div>
+  <h3> High-fi Designs </h3>
+    <div class="userFlow">
+    <img class="wireframeImg" src="festival/festivalHighfi.png" alt="face image">
+  </div>
+    
+  </div>
+  </div> <!-- end of wireframes section -->
+
+
+
+<div class=sectionHeader>
+        <h2> React.js App </h2>
+    </div>
+  <div class="container1" id="festivalReact">
+        <iframe src="https://stackblitz.com/edit/react-router-dom-basix-multi-page-example-hydpgc?file=src%2Fmap.js" allowfullscreen></iframe>
+    </div>
+
+
+   <div class="button-group">
+                <div class="sc-button">
+                    <form action="ravinia.html">
+                        <button class="scbutton" type="submit"> ← Prev Project</button> 
+                    </form>
+                </div>
+                <div class="sc-button">
+                    <form action="bluebeam.html">
+                            <button class="scbutton" type="submit"> Next Project → </button> 
+                    </form>
+                </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    
+
+</body> 
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <title>Services</title>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px auto;
+            max-width: 80%;
+        }
+
+        .box {
+            flex: 1;
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border: 1px solid black;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .button {
+            background-color: #002366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        .section-blue {
+        background-color: #C6DEFA;
+        
+        
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+     .section {
+        
+        
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+        section:hover {
+            outline: 2px solid #F24E1E;
+        }
+
+        .text {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            max-width: 50%;
+        }
+
+        .title {
+            font-size: 36px;
+        }
+
+        .title-section {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #pad {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .logo-big {
+            width: 75px;
+            height: 75px;
+            margin-right: 20px;
+        }
+
+        .logo-big {
+            width: 50px;
+            height: 50px;
+        }
+
+        .small {
+            font-size: 9px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box {
+                width: 80%;
+            }
+
+            .text {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">
+        <img id="pad" src="https://i.ibb.co/tYzv7Q9/8th.png" class="logo" alt="Image 1"><br>
+        <p>Services Beginning in 8th or 9th Grade</p><br>
+        <a href="#eigth" class="button">Learn More</a>
+    </div>
+    <div class="box">
+        <img src="https://i.ibb.co/QbH0nYg/9th.png" class="logo" alt="Image 1"><br>
+        <p>Services Beginning in 9th Grade</p><br>
+        <a href="#ninth" class="button">Learn More</a>
+    </div>
+    <div class="box">
+        <img src="https://i.ibb.co/9HhHYqs/10th.png" class="logo" alt="Image 1"><br>
+        <p>Services Beginning in 10th Grade</p><br>
+        <a href="#tenth" class="button">Learn More</a>
+    </div>
+    <div class="box">
+        <img src="https://i.ibb.co/r2yS6dZ/11th.png" class="logo" alt="Image 1"><br>
+        <p>Services Beginning in 11th Grade</p><br>
+        <a href="#eleventh" class="button">Learn More</a>
+    </div>
+    <div class="box">
+        <img src="https://i.ibb.co/4Kg9vyQ/12th.png" class="logo" alt="Image 1"><br>
+        <p>Services Beginning in 12th Grade</p><br>
+        <a href="#twelfth" class="button">Learn More</a>
+    </div>
+</div>
+
+<section class="section-blue" id="eigth">
+    <div class="text">
+        <div class="title-section">
+            <img src="https://i.ibb.co/tYzv7Q9/8th.png" class="logo-big" alt="Image 1">
+            <p class="title"> 8th-12th Grade </p>
+        </div>
+        <p><strong>MAKING THE MOST OF HIGH SCHOOL - Hourly Advising</strong></p><br>
+        <p>Advising in the areas of academic advising and course selection, college testing, extra-curricular and summer activities, and/or early college visits</p><br>
+        <p><strong>4-YEAR COMPREHENSIVE SERVICES</strong></p><br>
+        <p>Comprehensive services provide start to finish college advising. Services begin freshman year and can include any or all of the following: family intake interview, academic planning, test advising, development of a college list, recruiting advisement, assistance with college applications, essays, recommendations, interviews, planning college visits, and final college decision making.</p><br>
+        <p><strong>Unlimited </strong>hours for up to 10 college applications senior year. Additional schools will be at the hourly rate.</p>
+    </div>
+</section>
+
+<section class="section" id="ninth">
+    <div class="text">
+        <div class="title-section">
+            <img src="https://i.ibb.co/QbH0nYg/9th.png" class="logo-big" alt="Image 1">
+            <p class="title"> 9th-12th Grade </p>
+        </div>
+        <p><strong>MAKING THE MOST OF HIGH SCHOOL - Hourly </strong></p><br>
+        <p>Advising in the areas of academic advising and course selection, college testing, extra-curricular and summer activities, and/or early college visits</p><br>
+        <p><strong>4-YEAR COMPREHENSIVE SERVICES </strong></p><br>
+        <p>Comprehensive services provide start to finish college advising. Services begin freshman year and can include any or all of the following: family intake interview, academic planning, test advising, development of a college list, recruiting advisement, assistance with college applications, essays, recommendations, interviews, planning college visits, and final college decision making.</p><br>
+        <p><strong>Unlimited </strong>hours for up to 10 college applications senior year. Additional schools will be at the hourly rate.</p>
+    </div>
+</section>
+
+<section class="section-blue" id="tenth">
+    <div class="text">
+        <div class="title-section">
+            <img src="https://i.ibb.co/bQhhFFn/10th.png" class="logo-big" alt="Image 1">
+            <p class="title"> 10th-12th Grade </p>
+        </div>
+        <p><strong>3-YEAR COMPREHENSIVE SERVICES </strong></p><br>
+        <p>Comprehensive services provide start to finish college advising. Services begin sophomore year and can include family intake interview, academic planning, test advising, development of a college list, recruiting advisement, assistance with college applications, essays, recommendations, interviews, planning college visits, and final college decision making.</p><br>
+        <p><strong>Unlimited </strong>hours for up to 10 college applications senior year. Additional schools will be at the hourly rate.</p><br>
+        <p>Comprehensive services include: personal sessions, research, editing and/or phone and email contact (during normal business hours).</p><br>
+        <p class="small">*Dual application programs, such as in the fine arts and guaranteed admissions, will be capped at 20 hours senior year, after which the hourly rate will apply.</p><br>
+        <p class="small">*There will be an additional cost at the hourly rate for scholarship and honors college essay assistance.</p>
+    </div>
+</section>
+
+<section class="section" id="eleventh">
+    <div class="text">
+        <div class="title-section">
+            <img src="https://i.ibb.co/r2yS6dZ/11th.png" class="logo-big" alt="Image 1">
+            <p class="title"> 11th-12th Grade </p>
+        </div>
+        <p><strong>COLLEGE EXPLORATION (11th grade) - (up to 5-hours)</strong></p><br>
+        <p>Advising focuses on developing the college list:</p><br>
+        <p>• Information on colleges</p>
+        <p>• College Criteria for matching student to colleges</p>
+        <p>• Questionnaires and/or interview of student and family</p>
+        <p>• Transcript/test score review</p>
+        <p>• Research for balanced list of good-fit colleges for student</p>
+        <p>• Preparation of report </p><br>
+        <p>Hours can also include as needed: student and family intake, academic planning , campus visits and/or standardized testing guidance</p><br>
+        <p><strong>COMPREHENSIVE SERVICES (11th and 12th grades)</strong></p><br>
+        <p>Comprehensive services provide start to finish college advising. Services begin in the fall or spring of the junior year and include as needed: academic planning, test advising, college visit guidance, development of a college list, recruiting advisement, and related questions. Senior services include academic planning, test advising, assistance with college applications, essays, recommendations, interviews, planning college visits, and final college decision making.</p><br>
+        <p><strong>Unlimited </strong>hours for up to 10 college applications senior year. Additional schools will be at the hourly rate.</p><br>
+        <p>Services include: personal sessions, research, editing and/or phone and email contact (during normal business hours).</p><br>
+        <p class="small">*Dual application programs, such as in the fine arts and guaranteed admissions, will be capped at 20 hours senior year, after which the hourly rate will apply.</p><br>
+        <p class="small">*There will be an additional cost at the hourly rate for scholarship and honors college essay assistance.</p>
+    </div>
+</section>
+
+<section class="section-blue" id="twelfth">
+    <div class="text">
+        <div class="title-section">
+            <img src="https://i.ibb.co/4Kg9vyQ/12th.png" class="logo-big" alt="Image 1">
+            <p class="title"> 12th Grade </p>
+        </div>
+        <p><strong>COLLEGE APPLICATIONS and ESSAYS for the SELF-STARTER : (up to 10 hours)</strong></p><br>
+        <p>This package can include assistance with completing applications, essays, recommendations, interviews, and final college decisions</p><br>
+        <p><strong>COMPREHENSIVE SERVICES/College Applications and Essays</strong></p><br>
+        <p>Comprehensive services for the senior year. Senior services include academic planning, test advising, assistance with college applications, essays, recommendations, interviews, planning college visits, and final college decision making.</p><br>
+        <p><strong>Unlimited </strong>hours for up to 10 college applications senior year. Additional schools will be at the hourly rate.</p><br>
+        <p>Services include: personal sessions, research, editing and/or phone and email contact (during normal business hours)</p><br>
+        <p class="small">*Dual application programs, such as in the fine arts and guaranteed admissions, will be capped at 20 hours senior year, after which the hourly rate will apply.</p><br>
+        <p class="small">*There will be an additional cost at the hourly rate for scholarship and honors college essay assistance.</p>
+    </div>
+</section>
+
+</body>
+</html>

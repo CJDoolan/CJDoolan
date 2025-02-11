@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="BACKGROUND" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.51 244.54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffd32a;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="270.26" cy="19.52" r="5.75"/>
+  <circle class="cls-1" cx="24.98" cy="19.73" r="5.75"/>
+  <circle class="cls-1" cx="24.98" cy="225.44" r="5.75"/>
+  <rect class="cls-1" x="24.36" y="19.52" width="245.96" height="1.09"/>
+  <rect class="cls-1" x="-76.53" y="120.48" width="203" height="1.09" transform="translate(-96.05 146) rotate(-90)"/>
+</svg>

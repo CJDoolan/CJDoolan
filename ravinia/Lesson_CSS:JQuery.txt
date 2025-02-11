@@ -1,0 +1,393 @@
+<p><span style="font-size: 18pt;"><strong><span style="font-family: Roboto, sans-serif; color: #282c2f;">Downloading and Extracting the Training Files</span></strong></span></p>
+
+<p id="time"><span style="font-family: Roboto, sans-serif; font-size: 12pt; color: #282c2f;">1 min</span></p>
+
+<p><span style="font-size: 21px; font-family: 'Roboto', sans-serif;">This quick how-to video will guide you through the steps to download and extract the ZIP file containing all the demonstration and exercise files you'll need for the course you'll be attending.</span></p>
+
+<div><!--nav bar styling -->
+
+<style>
+
+ 
+
+ 
+
+.row {
+
+   
+
+    max-width: 100%;
+
+}
+
+ #time {
+
+margin-top: -10px;
+
+margin-bottom: 20px;}
+
+ 
+
+#lp-left-nav .lesson:hover {
+
+    background: white;
+
+    color: white;
+
+}
+
+.lp-left-nav .lesson-row .title {
+
+  
+
+    font-size: 14px;
+
+}
+
+div#lesson-body {
+
+    width: 80%;
+
+}
+
+.lesson-row:hover {
+
+background: #245496;
+
+    color: white;
+
+margin-left: 10px;
+
+    margin-right: 10px;
+
+    border-radius: 8px;
+
+  
+
+}
+
+ 
+
+ 
+
+.lp-color-scheme-light .lp-left-nav .section-title {
+
+    background: white;
+
+    color: #818186;
+
+    font-family: 'Roboto', sans-serif;
+
+    text-transform: uppercase;
+
+    font-weight: 300;
+
+    text-align: left;
+
+    font-size: 16px;
+
+}
+
+ 
+
+.lp-color-scheme-light .lp-left-nav .course-title {
+
+ 
+
+    text-align: left;
+
+    font-size: 18px;
+
+padding-left: 10px;
+
+padding-top: 30px;
+
+}
+
+#lp-left-nav .left-nav-return {
+
+  
+
+    text-align: left;
+
+    padding-left: 20px;
+
+font-size: 12px;
+
+margin-bottom: 0px;
+
+}
+
+ 
+
+ 
+
+.animated-button-pair .fa {
+
+    height: 12px;
+
+  
+
+ 
+
+}
+
+ 
+
+.fa-circle-o:before {
+
+    display: none;
+
+}
+
+ 
+
+.icon-video:before {
+
+    display: block;
+
+}
+
+ 
+
+.icon-video:after {
+
+    display: none;
+
+}
+
+ 
+
+#lp-left-nav .lesson-active, #lp-left-nav .current-item {
+
+    background: #ECF1F8;
+
+   
+
+    border-radius: 8px;
+
+    margin-left: 10px;
+
+    margin-right: 10px;
+
+}
+
+ 
+
+.lp-left-nav .lesson-row {
+
+  
+
+    margin-left: 10px;
+
+    margin-right: 10px;
+
+}
+
+ 
+
+hr {
+
+margin-top: 10px;
+
+margin-bottom: 10px}
+
+ 
+
+ 
+
+</style>
+
+<script>
+
+ 
+
+ 
+
+    $(document).ready(function() {
+
+        var $line = $('.section-title');
+
+       
+
+        $line.before(`
+
+            <hr>
+
+        `);
+
+ 
+
+    
+
+ 
+
+   $('.section-title').eq(1).text(function(index, text) {
+
+  return text + ' (day 1)';
+
+});
+
+$('.section-title').eq(2).text(function(index, text) {
+
+  return text + ' (day 2)';
+
+});
+
+$('.section-title').eq(3).text(function(index, text) {
+
+  return text + ' (day 3)';
+
+});
+
+$('.section-title').eq(4).text(function(index, text) {
+
+  return text + ' (day 4)';
+
+});
+
+ 
+
+    });
+
+ 
+
+</script>
+
+<style>
+
+ 
+
+ul.no-bullet {
+
+    margin-bottom: 50px;
+
+}
+
+.icon-attachment dark-bg-text {
+
+color: white;}
+
+ 
+
+ 
+
+ 
+
+ 
+
+#lp-wrapper #lesson-body #details-pane #details-pane-summary-content .icon-attachment {
+
+    margin-right: 0px;
+
+}
+
+    body.cbp-spmenu-fixed.sj-page-lesson:not(.lesson-fullscreen) #lp-wrapper #lesson-body #lesson-main {
+
+      
+
+        order: 2;
+
+    }
+
+ 
+
+ 
+
+#lp-wrapper #lesson-body.details-pane-bottom {
+
+   
+
+    display: grid;
+
+ 
+
+}
+
+ 
+
+#details-pane-inner {
+
+    padding-left: 0px;
+
+padding-right: 0px;
+
+   
+
+}
+
+ 
+
+ 
+
+ 
+
+    #lp-wrapper #lesson-body.details-pane-bottom #details-pane {
+
+         padding-left: 20px;
+
+        padding-right: 20px;
+
+        max-width: 1066px;
+
+      
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+ 
+
+margin-top: -20px
+
+    }
+
+ 
+
+.lp-color-scheme-light #lp-wrapper {
+
+     background: linear-gradient(to bottom, #FFFFFF, #E4F4FC);
+
+  
+
+}
+
+.lesson-top {
+
+    display: none;
+
+}
+
+ 
+
+.lesson-description-content {
+
+margin-top: 50px;
+
+}
+
+ 
+
+#lp-wrapper #lesson-body .lesson-top {
+
+    padding: 0px;
+
+margin-top: -5px;
+
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+</style>
+
+</div>

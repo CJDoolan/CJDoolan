@@ -1,0 +1,685 @@
+<!--header styling -->
+
+<div>
+
+<style>
+
+       body, p, h1, h2, h3 {
+
+  color: #282C2F;
+
+  font-family: Roboto, sans-serif;
+
+  font-style: normal;
+
+}
+
+.top-row-grey h2 {
+
+color: #282C2F;
+
+  font-family: Roboto, sans-serif;
+
+  font-style: normal;
+
+ 
+
+}
+
+.button {
+
+ 
+
+  font-family: Roboto, sans-serif;
+
+  font-style: normal; 
+
+font-size: 16px;
+
+
+}
+
+p {
+
+ 
+
+    font-size: 16px;
+
+line-height: 150%;
+
+  
+
+}
+
+.fa-circle-o:before {
+
+    display: none;
+
+}
+
+.sj-page-curriculum #resume-button.row a {
+
+
+    background: #0083DB;
+
+}
+
+.top-row h2, .top-row-grey h2, .top-row .h2-style, .top-row-grey .h2-style {
+
+    font-size: 21px;
+
+ 
+
+}
+
+.sj-page-curriculum #resume-button.row a:hover {
+
+
+     background-color: rgba(0, 131, 219, 0.6);
+
+}
+
+.section-container.tabs section .content, .section-container.tabs .section .content {
+
+  
+
+    padding-left: 0px;
+
+padding-right: 0px;
+
+}
+
+ 
+
+        h1, .top-row-grey h1 {
+
+            font-size: 30px;
+
+            font-weight: 800;
+
+            line-height: 150%;
+
+        }
+
+ 
+
+        h2 {
+
+            color: #282C2F;
+
+            font-family: Inter, sans-serif;
+
+            font-size: 21px;
+
+            font-style: normal;
+
+            font-weight: 400;
+
+            line-height: 150%;
+
+        }
+
+ 
+
+       .content hr {
+
+    display: none;
+
+}
+
+      
+
+ 
+
+        .row .row {
+
+            margin-top: 20px;
+
+        }
+
+ 
+
+     
+
+ 
+
+        .grey-bg, .top-row-grey {
+
+            background: linear-gradient(180deg, #E4F4FC 0%, #FFF 100%);
+
+        }
+
+ 
+
+       @media only screen and (min-width: 768px) {
+
+ 
+
+.large-4.pull-8.columns.cp-promo-image-wrapper {
+
+    padding-left: 0px;
+
+}
+
+ 
+
+#about, #skills {
+
+
+width:60%;
+
+}
+
+#skills {
+
+margin-left:40px;}
+
+    #cp-content #curriculum-list .lesson-section h3,
+
+    #cp-content #curriculum-list .lesson-section .h3-style {
+
+        font-size: 21px;
+
+        font-style: normal;
+
+        font-weight: 600;
+
+        line-height: 150%;
+
+    }
+
+ 
+
+ 
+
+ 
+
+    .intro {
+
+        display: flex;
+
+        justify-content: center;
+
+        padding-top: 50px;
+
+padding-left:15px;
+
+padding-right: 15px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+width: 83.333%;
+
+max-width: 1265px;
+
+       
+
+    }
+
+ 
+
+    .push-4 {
+
+        left: auto;
+
+        text-align: left;
+
+    }
+
+ 
+
+    .pull-8 {
+
+        right: auto;
+
+    }
+
+ 
+
+    .large-8 {
+
+        width: 50%;
+
+    }
+
+ 
+
+    .large-4 {
+
+        width: 50%;
+
+       
+
+    }
+
+}
+
+ 
+
+/* Styles for screens smaller than 768px */
+
+@media only screen and (max-width: 768px) {
+
+    #cp-content #curriculum-list .lesson-section h3,
+
+    #cp-content #curriculum-list .lesson-section .h3-style {
+
+        font-size: 18px;
+
+display: unset;
+
+    }
+
+ 
+
+  
+
+ 
+
+    .intro {
+
+        display: block;
+
+        padding: 50px;
+
+    }
+
+ 
+
+    .large-8 {
+
+        width: 100%;
+
+    }
+
+ 
+
+    .large-4 {
+
+        width: 100%;
+
+        padding-top: 50px;
+
+    }
+
+}
+
+ 
+
+        .sj-page-curriculum #resume-button.row a {
+
+            margin-bottom: 0;
+
+            margin-left: 15px;
+
+        }
+
+ 
+
+        .start-button {
+
+            margin-left: 15px;
+
+            border-radius: 8px;
+
+            background: #3CABF7;
+
+        }
+
+ 
+
+    </style>
+
+<script src=https://code.jquery.com/jquery-3.6.0.min.js></script>
+
+<!--Main Section styling -->
+
+<style>
+
+ 
+
+#cp-content #curriculum-list .lesson-row .bullet i {
+
+  
+
+    display: none;
+
+}
+
+ 
+
+  
+
+ 
+
+ 
+
+#about h3, #skills h3{
+
+color: #282C2F;
+
+ 
+
+font-family: Roboto;
+
+font-size: 21px;
+
+font-style: normal;
+
+font-weight: 600;
+
+line-height: 150%;
+
+}
+
+ 
+
+ 
+
+#about, #skills {
+
+padding-left: 15px;
+
+padding-right: 15px;
+
+ 
+
+}
+
+ 
+
+#about p, #skills p{
+
+color: #282C2F;
+
+font-family: Roboto;
+
+font-size: 16px;
+
+font-style: normal;
+
+font-weight: 400;
+
+line-height: 150%;
+
+}
+
+ 
+
+ 
+
+.section-container.tabs section .content, .section-container.tabs .section .content {
+
+    border: 1px solid transparent;
+
+    border-top: none;
+
+}
+
+ 
+
+.section-container.tabs section>.title a, .section-container.tabs .section>.title a {
+
+
+     display: none;
+
+}
+
+.top-row-grey {
+
+    border-bottom: none;
+
+}
+
+ 
+
+.content h2 {
+
+display: none;
+
+}
+
+ 
+
+.lesson-section.focus-link-v2 {
+
+   background-color: #ecf1f8;
+
+}
+
+.lesson-section.expand.focus-link-v2 {
+
+   background-color: #B0E2FF;
+
+}
+
+ 
+
+ 
+
+#cp-content #curriculum-list .lesson-section {
+
+   
+
+    border-radius: 30px;
+
+    width: 100%;
+
+    height: 120px;
+
+padding: 30px;
+
+overflow: hidden;
+
+position: relative;
+
+}
+
+ 
+
+#firstImg {
+
+top: 0px;
+
+}
+
+#secondImg {
+
+top: -120px;
+
+}
+
+#thirdImg {
+
+top: -240px;
+
+}
+
+#fourthImg {
+
+top: -360px;
+
+}
+
+#fifthImg {
+
+top: -480px;
+
+}
+
+#cp-content #curriculum-list .lesson-section img {
+
+
+             position: absolute;
+
+  
+
+    left: 70%;
+
+    width: 40%;
+
+    opacity: 20%;
+
+}
+
+ 
+
+ 
+
+ 
+
+.description {
+
+font-size: 16px;
+
+color: #282C2F;
+
+padding: 30px;
+
+margin-bottom: 0px;
+
+}
+
+ 
+
+      
+
+ 
+
+ 
+
+ 
+
+</style>
+
+<script>
+
+ 
+
+ 
+
+    $(document).ready(function() {
+
+        var $content = $('.top-row-grey');
+
+       
+
+        $content.append(`
+
+            <div class='intro'>
+
+                <div id='about'>
+
+ 
+
+                    <h3> About the course: </h3>
+
+                    <p>
+
+In this virtual live course, your instructor will guide you through interactive exercises and small group activities so you feel confident using Revu® in your daily work.</p>
+
+                </div>
+
+                <div id='skills'>
+
+                    <h3> Skills you'll gain: </h3>
+
+                    <p>
+
+We'll cover the foundational skills necessary to organize, markup, edit and track comments in a PDF drawing set and how to collaborate with Bluebeam Studio. Then we'll dive into fundamental drawing management and quantity takeoff features in Revu®.</p>
+
+                </div>
+
+            </div>
+
+        `);
+
+    });
+
+</script>
+
+<script>
+
+    $(document).ready(function() {
+
+        $('.lesson-section').first().append(`
+
+            <p>Day Zero | 3 Videos</p>
+
+            <img id="firstImg" src=https://i.ibb.co/SR8CHgr/IVCBanner-Image.png alt="Description of the image">
+
+        `);
+
+  
+
+        $('.lesson-section').eq(1).append(`
+
+            <p>Day One | 3 Videos</p>
+
+            <img  id="secondImg" src=https://i.ibb.co/SR8CHgr/IVCBanner-Image.png alt="Description of the image">
+
+        `);
+
+        $('.lesson-section').eq(2).append(`
+
+            <p>Day Two | 4 Videos</p>
+
+            <img  id="thirdImg" src=https://i.ibb.co/SR8CHgr/IVCBanner-Image.png alt="Description of the image">
+
+        `);
+
+        $('.lesson-section').eq(3).append(`
+
+            <p>Day Three | 4 Videos</p>
+
+            <img  id="fourthImg" src=https://i.ibb.co/SR8CHgr/IVCBanner-Image.png alt="Description of the image">
+
+        `);
+
+        $('.lesson-section').eq(4).append(`
+
+            <p>Day Four | 3 Videos</p>
+
+            <img  id="fifthImg" src=https://i.ibb.co/SR8CHgr/IVCBanner-Image.png alt="Description of the image">
+
+        `);
+
+        $('.lesson-section').first().after('<p class="description">In this section you\'ll find helpful videos on how to prepare before class. How-to videos will guide you through the steps to download and extract the ZIP file containing all the files you\'ll need as well as showing you how to navigate the Zoom video conferencing interface.</p>');
+
+ 
+
+ 
+
+$('.lesson-section').eq(1).after('<p class="description">Make sure to watch this series of videos before your first day of Revu Foundations training. Practice with your copy of Revu to fully understand these topics. We will review them during live training, but they will really help you become comfortable with these features.</p>');
+
+           
+
+            // Insert content after the third .lesson-section
+
+            $('.lesson-section').eq(2).after('<p class="description">The videos in this section will prepare you for day 2 of Revu Foundations training. Make sure to watch these videos and practice before class begins. After viewing the Studio Overview video, create a Bluebeam ID using the Studio panel. You\'ll need it for this training.</p>');
+
+           
+
+            // Insert content after the fourth .lesson-section
+
+            $('.lesson-section').eq(3).after('<p class="description">The videos found in this section will help you with the Drawing Management portion (day 3) of the training. Make sure to watch these videos and practice before class begins.</p>');
+
+           
+
+            // Insert content after the fifth .lesson-section
+
+            $('.lesson-section').eq(4).after('<p class="description">The videos found in this section will help you with the Quantity Takeoff portion (day 4) of the training. Make sure to watch these videos and practice before class begins.</p>');
+
+      
+
+      
+
+ 
+
+    });
+
+</script>
+
+</div>

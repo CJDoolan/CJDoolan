@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion Dropdown</title>
+  <style>
+    .accordion {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .accordion-section {
+      margin-top: 20px;
+    }
+
+    .accordion-header {
+      background-color: #f2f2f2;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      padding: 20px;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 10px;
+    }
+
+    .accordion-content p {
+      margin: 0;
+    }
+
+    .active {
+      display: block;
+      background-color: #FF7E36;
+      color: white;
+    }
+
+
+      .testimonial-container {
+      display: flex;
+      flex-wrap: wrap;
+
+      /*justify-content: space-between;*/
+     
+    }
+
+    .testimonial-box {
+      width: calc(30% - 30px);
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 5px;
+      margin: 10px;
+
+    }
+
+    .testimonial-text {
+      margin: 0;
+    }
+
+    @media (max-width: 800px) {
+      .testimonial-box {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .testimonial-box {
+        width: calc(100% - 20px);
+      }
+    }
+    .h3 {
+        color: black;
+    }
+    .highlight {
+        color:white;
+    }
+     .testimonial-section {
+            background-color: #002366; /* Dark blue background */
+            color: white; /* White text color */
+            padding: 50px 0; /* Vertical padding */
+            margin: 20px -230px;
+            display: none;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto; /* Center the container */
+            display: flex;
+            align-items: center;
+        }
+        .testimonial-image {
+            flex: 1; /* Take up 25% of the container */
+            margin-right: 20px; /* Add some space between image and text */
+        }
+        .testimonial-image img {
+            width: 100%; /* Make the image responsive */
+            display: block; /* Ensure the image behaves as a block element */
+        }
+        .testimonial-text {
+            flex: 2; /* Take up 75% of the container */
+            margin-right: 30px;
+        }
+        .testimonial-text h2 {
+            margin-top: 0; /* Remove default margin */
+        }
+        @media (min-width: 800px) and (min-height: 500px) {
+            .testimonial-section {
+                display: block; /* Show the section if screen size is larger than 1000x800px */
+            }
+        }
+  </style>
+</head>
+<body>
+
+<div class="accordion">
+  <div class="accordion-section">
+    <button class="accordion-header"><h3 class="h3">Student Testimonial</h3></button>
+    <div class="accordion-content">
+      <div class="testimonial-container">
+  <div class="testimonial-box">
+    <p class="testimonial-text">“Pat remained calm, encouraging, and supportive during even the most stressful phases of the college application process - her practical knowledge combined with the personal touch she brought to her coaching made for a smooth sailing, consistent application process. Her advanced understanding of the holistic nature of college admissions was incredibly helpful, as was her personal knowledge of specific schools. Even after I received my acceptance, she remained supportive in helping me make a decision. I loved getting to work with her!”<br><br>Student - Wisconsin</p>
+  </div>
+  <div class="testimonial-box">
+    <p class="testimonial-text">“Dear Pat, thank you so much for all of your help throughout the college process. I could not have done it without all of your help and guidance. I appreciate all your time, effort, and thoughtfulness in the editing process. I am looking forward to where my future leads me.”<br><br>Student - Highland Park High School</p>
+  </div>
+  <div class="testimonial-box">
+    <p class="testimonial-text">“Deal Pat, thank you for all your help over with the college process. You made a difficult and stressful time so much easier for me and my family. Your insight and guidance were exceptional and invaluable”<br><br>Student Rochelle Zell High School</p>
+  </div>
+  <div class="testimonial-box">
+    <p class="testimonial-text">“Sandie always helped me stay organized and on track. She also helped pull information out of me in order to come up with unique essay ideas. Thanks to Sandie, I am now committed to UW Madison and I could not be happier! Thanks for all your help, Sandie!”<br><br>New Trier High School Student</p>
+  </div>
+  <div class="testimonial-box">
+    <p class="testimonial-text">“Hey Pat, I just want to say thank you for all of your help. I was accepted to U Miami, Tulane, USC, and North Eastern, and I just received an acceptance from Syracuse along with a $20,000 annual founders scholarship! I couldn’t have done it without your help!”<br><br>Student, Glenbrook North</p>
+  </div>
+  <div class="testimonial-box">
+    <p class="testimonial-text">“Trying to figure out what college to apply to is a very difficult decision. Not only did Sandie help me find colleges that suited my best interests, she really made the whole application process run smoothly. At first, I was intimidated to start the process, but with Sandy's help I knew what to tackle first and I felt confident with her help. Throughout the process, she made sure that I was staying on task with my responsibilities and deadlines. I was accepted into two of my reach schools and I owe it to Sandie for teaching me how to perfect the application process”<br><br>Nicollete Lollino, Trinity HS Student (Student Palatine High School)</p>
+  </div>
+  <div class="testimonial-box">
+    <p class="testimonial-text">“I loved working with Sandie, she made the whole application process so easy and was able to answer all of my questions. Thank you for all of your help!”<br><br>-Mellisa - Glenbrook North Student</p>
+  </div>
+  <div class="testimonial-box">
+    <p class="testimonial-text">“Pat's guidance throughout my college application process was extremely helpful. Because of her, I was able to narrow down and really decide on what kind of school I was looking for. She is perfect for both Students who are just starting out and have no idea what they want, and students who know exactly where they want to go and/or what they want to study. She was always willing to help me with my essays, no matter if it was during a session or in her free time online through Google Docs. I don't know where I'd be without her! Thank you, Pat!!”<br><br>Student, Highland Park High School</p>
+  </div>
+</div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <section class="testimonial-section">
+    <div class="container">
+        <div class="testimonial-image">
+            <img src="https://i.ibb.co/XtBJwrc/IMG-3682.jpg" alt="Student Image">
+        </div>
+        <div class="testimonial-text">
+            
+            <p class="highlight">“Pat remained calm, encouraging, and supportive during even the most stressful phases of the college application process - her practical knowledge combined with the personal touch she brought to her coaching made for a smooth sailing, consistent application process. Her advanced understanding of the holistic nature of college admissions was incredibly helpful, as was her personal knowledge of specific schools. Even after I received my acceptance, she remained supportive in helping me make a decision. I loved getting to work with her!”</p> <br>
+            <p class="highlight"><strong>Student - Wisconsin</strong></p>
+        </div>
+    </div>
+</section>
+
+
+
+
+  <div class="accordion-section">
+    <button class="accordion-header"><h3 class="h3">Parent Testimonial</h3></button>
+    <div class="accordion-content">
+      <div class="testimonial-container">
+        <div class="testimonial-box">
+    <p class="testimonial-text">“I have been meaning to reach out to thank you ever so much for helping my son with his college application process. We are absolutely blown away by his acceptance and scholarship . has received from the choices he applied to, including his top two choices:  the University of Tampa and Loyola. As a parent, it was great to know that he was in good hands with you. I was honestly able to get off the stressed bus entirely. and seeing the results, we truly know that the investment was worth every penny. I could go on and on because you were such an asset at every point: isolating schools of interest, choosing the essay topic, and then assisting. with editing, staying on top of deadlines, navigating the common app, test core, all of it. Pat, you really found a way to connect and help him while letting him take the lead. Whatever you did,  it worked.”<br><br>Parent- Barrington High School</p>
+  </div>
+  <div class="testimonial-box">
+    <p class="testimonial-text">“From the moment we met Sandie, she sorted out all the issues (which schools were better for my daughter's intended major, scholarships, how/when to apply, assistance with essays, etc.) like a pro. She was able to serve as the all-important non-parent sounding board. She turned an overwhelming process into a manageable one. As a result, my daughter is very happy with all her choices and we are thrilled! ''<br><br>Tom, New Trier High School Parent</p>
+  </div>
+  <div class="testimonial-box">
+    <p class="testimonial-text">“We, as parents, were looking for professional services in order to help our daughter through the college process. We heard about other agencies where people get ‘help’ and get ‘hurt’. Yes, to be honest, we were skeptical at the beginning without knowing what to expect and without any references, but we made the right decision. Sandra was very knowledgeable and explained in a very simple way the action plan and what to expect in the end. Most importantly, our daughter felt very comfortable and couldn't wait for her next appointment. Sandra helped her narrow down her choices, work through what to look for while making a list, etc. We recommend RCC to any family, you will not regret it!”<br><br>Highland Park Parent</p>
+  </div>
+  <div class="testimonial-box">
+    <p class="testimonial-text">“Pat brought a sense of peace, yes peace! To our college application process! She provided the perfect combination of practical knowledge, technical expertise, and emotional support. This was our first child to go through the process, and we are so grateful to have gone through it with Pat at the helm! Bottom line, we were thrilled with the process and THRILLED with the results! Many thanks, Pat!”<br><br>Michelle, Highland Park Parent</p>
+  </div>
+  <div class="testimonial-box">
+    <p class="testimonial-text">“Pat's competitive advantage is that she is not only very knowledgeable about the college admission process but takes the time to really understand your students and make recommendations uniquely suited for them. She also has a great talent for being very calming and able to reduce the stress level of her students. Without reservation, I would reckon Pat!”<br><br>Parent Highland Park</p>
+  </div>
+  <div class="testimonial-box">
+    <p class="testimonial-text">"Sandie helped both of my boys with their college essays and did an unbelievable job.  She knew exactly how to pull the information out of my boys and helped them with writing the best essay.  They both got into the University of Illinois and we owe her a huge thank you!!!!!  Thank you, Sandie!!!  I will be recommending you to all my friends!!”<br><br>Julie Slutsky, Northbrook Parent</p>
+  </div>
+  <div class="testimonial-box">
+    <p class="testimonial-text">“Our son had a complex array of factors that we needed to consider when applying to college programs.  Pat quickly grasped and understood our atypical situation and used her professional expertise to help our son find excellent programs that would meet his needs.  Throughout the admissions process, Pat provided guidance in thoughtful and supportive ways which helped him to feel engaged and in control, while simultaneously addressing my fears as a parent.  Ultimately our son received offers from many top-tier schools including his first choice, Northwestern University.”<br><br>Debi Gordon, Highland Park Parent</p>
+  </div>
+  <div class="testimonial-box">
+    <p class="testimonial-text">"I did a great deal of research on the college application process, but it was no match for Pat's real life experience.  Her vast knowledge and behind the scenes insight provided us the security we needed during this important time in our lives. She helped us prioritize and meet deadlines.  What I loved most about Pat was her sense of integrity, her patience and her wisdom.  She became an instant confidant for me and my family, and although I have only known her for a couple of months, I feel like she is an old friend."  <br><br>Vicki, Glenview Parent</p>
+  </div>
+</div>
+
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <section class="testimonial-section">
+    <div class="container">
+       
+        <div class="testimonial-text">
+            
+            <p class="highlight">“We, as parents, were looking for professional services in order to help our daughter through the college process. We heard about other agencies where people get ‘help’ and get ‘hurt’. Yes, to be honest, we were skeptical at the beginning without knowing what to expect and without any references, but we made the right decision. Sandra was very knowledgeable and explained in a very simple way the action plan and what to expect in the end. Most importantly, our daughter felt very comfortable and couldn't wait for her next appointment. Sandra helped her narrow down her choices, work through what to look for while making a list, etc. We recommend RCC to any family, you will not regret it!” </p> <br>
+            <p class="highlight"><strong>Highland Park Parent</strong></p>
+        </div>
+        
+         <div class="testimonial-image">
+            <img src="https://i.ibb.co/jRDzq84/IMG-5359.jpg" alt="Student Image">
+        </div>
+    </div>
+</section>
+
+
+
+
+
+  <div class="accordion-section">
+    <button class="accordion-header"><h3 class="h3">Professional Testimonial</h3></button>
+    <div class="accordion-content">
+       <div class="testimonial-container">
+      <div class="testimonial-box">
+    <p class="testimonial-text">“I have been fortunate to work with Sandie Gilbert for the last 20 years. Regardless of the institution I've worked for (Indiana University, Northwestern University, and now Butler University), Sandie has been a tireless advocate for her students. She is committed to knowing the key issues in the college admission process and has served in key positions (at the state, regional, and national level) to inform both conversation and process. She never hesitates to contact those of us working on college campuses to make sure she has the best information and advice for her students. Sandie is a true professional in all she does.”<br><br>Scott D. Ham<br> Associate Director of Admissions, Recruitment <br>Texas State University-San Marcos</p>
+  </div>
+  <div class="testimonial-box">
+    <p class="testimonial-text">“Sandra Gilbert brings a wealth of knowledge and expert skills to the field of post-secondary planning. Sandra is knowledgeable about every aspect of the college admission process.  Having worked at both the high school and college level, she is well-respected by colleagues throughout the country. Sandra is able to make connections with a wide range of students.  She displays exceptional verbal and written communication skill, is very organized and a great problem-solver. Both students and parents will be well-served by Sandra Gilbert.”<br><br>Maryanne Kelly <br>Director of Student Personnel Services, Maine Township High School South – Retired <br> Past President of the Illinois Association for College Admission Counseling</p>
+  </div>
+  <div class="testimonial-box">
+    <p class="testimonial-text">“Sandra Gilbert is an expert in her field.  It has been a pleasure to have Sandra work with future school counselors in our Masters program at DePaul because of her extensive knowledge of college admissions and career development.  As a professional school counselor and college consultant, Sandra's years of experience and knowledge base give her great credibility for guiding students towards their most optimal post secondary path.”<br><br>​Erin Mason, Ph.D. <br> Assistant Professor <br> Georgia State University</p>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+  accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      const accordionContent = header.nextElementSibling;
+      header.classList.toggle('active');
+      if (header.classList.contains('active')) {
+        accordionContent.style.display = 'block';
+      } else {
+        accordionContent.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

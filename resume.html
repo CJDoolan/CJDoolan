@@ -1,0 +1,370 @@
+<!DOCTYPE html> <!--defines as a HTML document-->
+<html> <!--everything contained within-->
+<head>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel= "stylesheet" href= "shared.css">
+
+	<title>
+Resume
+	</title>
+
+<style>
+
+	.container1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -5px;
+    padding: 50px;
+ 
+}
+.container {
+	display: block;
+}
+
+.role-box {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border: 2px solid coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateX(-200%); /* Start off-screen */
+    transition: opacity 1s, transform 1s ease-in-out;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.role-box .icon {
+    width: 100px;
+    height:100px;
+    margin-bottom: 10px;
+}
+
+.role-box .role {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.role-box.show {
+    opacity: 1;
+    transform: translateX(0); /* Move to normal position */
+}
+
+.icon img {
+    width: 100px;
+}
+
+.role {
+    color: #f88379;
+    margin: 0px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.twoSections {
+    margin-bottom: 0px;
+    background-image: url('assets/img/christina1.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.right {
+    width: 150vw;
+    height: 80vh;
+}
+.cd-timeline {
+	background-color: white
+}
+#experience{
+	text-align: center;
+	margin-bottom: 100px;
+	margin-top: 100px
+}
+#me {
+	margin-bottom: 50px;
+  margin-top:150px;
+}
+.cd-timeline__img img {
+    width: 200px;
+    height: auto;
+    }
+
+
+#skills {
+    text-align: center; /* Center the text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:100px;
+    background-color: coral;
+    padding:50px;
+}
+
+#skills img {
+    width: 25vw; /* Make the image take up 50% of the viewport width */
+    max-width: 100%; /* Ensure it doesn’t overflow */
+    height: auto; /* Maintain aspect ratio */
+    margin: 50px;
+}
+
+.cd-timeline__content h3 {
+  
+    color: black;
+}
+
+a {
+  font-size: 1em;
+}
+
+/* Initial state: elements offscreen */
+#me, #meParagraph {
+    opacity: 0;
+    transform: translateY(-50px); /* Start off the screen */
+}
+
+/* Animation for the h1 */
+@keyframes slideDownH1 {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for the p */
+@keyframes slideDownP {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#me {
+    animation: slideDownH1 1s ease-out forwards; /* Animate the h1 */
+}
+
+#meParagraph {
+    animation: slideDownP 1s ease-out forwards; /* Animate the p */
+    animation-delay: 0.5s; /* Delay for the p to start after the h1 */
+}
+
+
+</style>
+</head>
+<body>
+	
+	<!-- navigation -->
+
+<div id= "navbar">
+        <a href= "home.html" >
+        <img id="logo" src= "assets/img/personal_logo.svg" alt="CJD"> </a>
+    
+        <a href= "home.html#work">UX/UI </a>
+        
+        <a href= "resume.html">About me </a>
+        <div id="linkedIn">
+            <a href= "https://www.linkedin.com/in/christina-doolan-36b1a224a/" target =_blank>
+                <img id="linked" src= "assets/img/linkedin.png" alt= "linkedin">
+            </a>
+        </div>
+    </div> <!-- nav bar -->
+
+
+
+<div class="twoSections">
+ 		<div class="left">
+	 		<h1 id="me" > About me! </h1>
+	 		<p id="meParagraph">Hello, my name is Christina Doolan. Im a USC senior with a passion for blending the science of the mind and the art of design, crafting user experiences that seamlessly combine functionality and visual appeal through cognitive psychology and web development.</p>
+	 		</div> <!-- leftsection of home screen -->
+ 		<div class="right">
+ 			
+ 		</div>
+ 
+
+ </div><!--  first section -->
+
+
+<div class="container1">
+        <div class="role-box" id="front-end">
+            <div class="icon"> <img class="icon"src="assets/img/icon.png"></div>
+            <p class="role">UX/UI Designer</p>
+        </div>
+        <div class="role-box" id="visual-designer">
+            <div class="icon"><img class="icon"src="assets/img/icon.png"></div>
+            <p class="role">Front End Developer</p>
+        </div>
+        <div class="role-box" id="ux-researcher">
+            <div class="icon"><img class="icon"src="assets/img/icon.png"></div>
+            <p class="role">Visual Designer</p>
+        </div>
+        <div class="role-box" id="ux-ui-designer">
+            <div class="icon"><img class="icon"src="assets/img/icon.png"></div>
+            <p class="role">UX Researcher</p>
+        </div>
+    </div>
+
+	 	
+
+
+
+<script>
+    window.addEventListener('scroll', function() {
+    const roles = document.querySelectorAll('.role-box');
+    const windowHeight = window.innerHeight;
+
+    roles.forEach((role, index) => {
+        const roleTop = role.getBoundingClientRect().top;
+        if (roleTop <= windowHeight - 100) {
+            // Delay the "show" class by a certain amount for each box
+            setTimeout(() => {
+                role.classList.add('show');
+            }, index * 250); // Adjust delay (200ms) between each box
+        }
+    });
+});
+
+</script>
+
+
+
+
+  <section class="cd-timeline js-cd-timeline">
+  	<h1 id="experience"> Work Experience </h1>
+    <div class="container max-width-lg cd-timeline__container">
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <img src="assets/img/bluebeamIcon.png" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h3>User Experience and Graphic Design Summer Intern</h3>
+          <p> Bluebeam Software </p>
+          <p class="color-contrast-medium"> 
+          	• Redesigned pre-portal virtual training sites and videos using Figma, jQuery, and Premiere Pro, customizing
+the Skilar page and improving the initial user experience for Bluebeam’s 3 million subscribers<br>
+• Created 100+ thumbnails for live trainings, courses, how-to guides, and related content, ensuring cohesive
+and on-brand visuals while clearly differentiating categories and individual items from the user's perspective<br>
+• Coded responsive emails for mobile and web screens, enhancing engagement for existing and new customers<br>
+• Engaged with Bluebeam executives, including CEO Usman Shuja, to gather insights on their experiences</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">June 2024-August 2024</span>
+            
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--movie">
+          <img src="assets/img/uscIcon.png" alt="Movie">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h3>Social Media Marketing & Design Intern</h3>
+          <p> USC Marshall Office of Executive Education</p>
+          <p class="color-contrast-medium">
+          	• Increase enrollment and brand awareness through marketing campaigns, banners, and organic posts resulting
+in 3,000 new followers and an increase in average monthly engagement by over 7,000 impressions<br>
+• Created top three LinkedIn posts each yielding over 4,500 impressions and 100 engagements<br>
+• Manage YouTube channel increasing subscriber base by 200% and raising average monthly views by 10,000<br>
+• Partner in major conferences alongside Kaiser Permanente and The Josh Bersin Company</p>
+          
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">December 2022-Present
+</span>
+            
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <img src="assets/img/uscIcon.png" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h3>Graphic Design & Marketing Intern</h3>
+          <p> USC Marshall Master of Business for Veterans </p>
+          <p class="color-contrast-medium">
+          	• Design visually captivating graphics using Mid Journey, Adobe Creative Suite, and Figma<br>
+• Curate engaging social media content boosting LinkedIn impressions by 287% and engagement by 296%<br>
+• Collaborate weekly with the MBV team to align graphic designs with strategic campaigns and messaging</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">August 2023-Present</span>
+            
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--location">
+          <img src="assets/img/raviniaIcon.png" alt="Location">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h3>Web Development and Visual Branding Consultant</h3>
+          <p class="color-contrast-medium">•Trusted to lead a comprehensive company logo redesign, enhancing brand aesthetics and visual appeal<br>
+• Revitalizing company identity, transforming brands' online presence to align with current market trends<br>
+• Redesigning company website to create a more user-friendly interface aiming to elevate user engagement</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">August 2023-January 2024</span>
+           
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      
+    </div>
+  </section> <!-- cd-timeline -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+<div id="skills">
+	<h1> Technical Skills </h1>
+	<img src="assets/img/skills.png">
+	
+</div>
+
+
+<!-- footer  -->
+<!-- 
+    <div class="footer-navbar">
+        <div class="links-footer">
+            <a href="https://www.linkedin.com/in/christina-doolan-36b1a224a/" target="_blank">
+                <img class="linked-footer" src="assets/img/linkedin2.png" alt="linkedin">
+            </a>
+            
+         </div> 
+            
+        <div class="tabs">
+        <a href= "home.html" >Home </a>
+        <a href= "home.html#work">UX/UI </a>
+        
+        <a href= "resume.html">About Me</a>
+        </div> 
+    </div>  --><!-- footer -->
+
+
+</body> 
+</html>
