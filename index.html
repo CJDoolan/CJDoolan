@@ -1,116 +1,552 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html> 
+<html> 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>document.getElementsByTagName("html")[0].className += " js";</script>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Responsive Vertical Timeline | CodyHouse</title>
+    <title>
+Portfolio_CDoolan_Home
+    </title>
+
+     <meta name="description" content="Christina Doolan's design portfolio and Resume. Works include projects from executive eduction internship, innovation design club, Adobe, and more.">
+
+<link rel= "stylesheet" href= "shared.css">
+
+<style>
+
+/* top section */
+    .hero-section {
+        position: relative;
+        background-image: url('assets/img/allPattern.png'); 
+        background-size: cover;
+        background-position: center;
+        height: 650px; 
+        width: 100%;
+        background-attachment: fixed; /* Makes background stay in place */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+          
+
+    }
+    .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 650px;
+        background: rgba(0, 0, 0, 0.8); /* Adjust opacity for better readability */
+    }
+
+    .hero-content {
+        position: relative; /* Keeps text above overlay */
+        z-index: 1;
+    }
+   /* #pixels {
+        font-family: 'Pixeloid', sans-serif;
+        color: #ffd32a;
+    }*/
+
+    #name {
+        margin: 0;
+        font-family: 'AbangFashion', sans-serif;
+         font-size: 8em;
+         word-spacing: -20px;
+    }
+    #quoteOne {
+        margin-left: -650px;
+        margin-bottom: 0px;
+        font-size: 3em;
+    }
+    #quoteTwo {
+        margin-left: 500px;
+        margin-top: 0px;
+        font-size: 3em;
+    }
+    #stringImg{
+        width: 400px;
+    }
+
+    #string{
+        position: absolute;
+  
+        left: 50%;
+        transform: translateX(-55%);
+        z-index: 5;
+        
+        margin-top: -240px;
+        pointer-events: none;
+
+
+        /* Initial Opacity Gradient */
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, 
+                                                rgba(0, 0, 0, 0.3) 20%, 
+                                                rgba(0, 0, 0, 0.1) 100%);
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, 
+                                                        rgba(0, 0, 0, 0.3) 20%, 
+                                                        rgba(0, 0, 0, 0.1) 100%);
+        transition: opacity 0.5s ease; /* Smooth transition */
+    }
+
+
+/* case study section */
+    .line, .lineRight {
+    width: 50px;
+    height: 10px;
+    background-color: #ffce1b;
+ 
+}
+.lineRight {
+     display: block;  /* Ensures it's treated as a block element */
+    margin-left: auto;  /* Pushes it to the right */
+}
+    .yellow {
+        color: coral;
+    }
+    #caseStudies {
+  /*      margin-top: 100px;*/
+        /*margin-left: 20px;*/
+        font-family: 'AbangFashion', sans-serif;
+        font-size: 6vw;
+        margin-bottom: 20px;
+    }
+    #work {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        text-align: center;
+        width: 100%; /* Ensures it takes full width */
+        margin-top: 700px;
+    }
+    
+    
+    .rightTwo {
+        text-align: right;
+        margin-right: 75px;
+        margin-top:100px;
+    }
+    
+  
+    
+
+   #backgroundSection, #backgroundSectionTwo, #backgroundSectionThree, #backgroundSectionFour {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+#backgroundSection {
+    height: 250px;
+    background-image: url('assets/img/poster_final.png'); 
+}
+
+#backgroundSectionTwo {
+    height: 200px;
+    background-image: url('assets/img/bluebeamPattern.png'); 
+}
+
+#backgroundSectionThree {
+    height: 200px;
+    background-image: url('sprout/phonePattern.png'); 
+}
+
+#backgroundSectionFour {
+    height: 200px;
+    background-image: url('ravinia/raviniaPattern.png'); 
+}
+
+/* Add overlay effect */
+#backgroundSection::before,
+#backgroundSectionTwo::before,
+#backgroundSectionThree::before,
+#backgroundSectionFour::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Make sure the overlay covers the entire section */
+    background: rgba(0, 0, 0, 0.75); /* Apply opacity */
+    z-index: 1; /* Ensure overlay is above the background image */
+}
+
+/* Content within the sections */
+#backgroundSection, #backgroundSectionTwo, #backgroundSectionThree, #backgroundSectionFour {
+    position: relative;
+    z-index: 2; /* Ensure text/content appears above the overlay */
+}
+
+
+
+      
+
+    
+     
+/* mobile phones */
+    @media only screen and (max-width: 768px){
+        body {
+            background-color: red !important;
+        }
+        .hero-section {
+            background-size: cover !important; 
+            background-position: center center !important;
+            width: 100vw !important;
+            height: 600px !important; 
+        }
+        #quoteOne, #quoteTwo {
+            margin-left: 0px !important;
+        }
+        #string { /* Fixed typo from #sring to #string */
+             display: none !important;
+        }
+        .twoSections {
+            display: contents !important;
+        }
+        .scbutton {
+            width: 80vw !important;
+            height: 75px !important;
+        }
+    }
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#quoteOne {
+    opacity: 0;
+    animation: fadeInDown .8s ease-out forwards;
+     animation-delay: .3s; /* Starts after the first one */
+}
+
+#name {
+    opacity: 0;
+    animation: fadeInDown 1.5s ease-out forwards;
+    animation-delay: .7s; /* Starts after the first one */
+}
+
+#quoteTwo {
+    opacity: 0;
+    animation: fadeInDown .8s ease-out forwards;
+    animation-delay: 1.2s; /* Starts after the second one */
+}
+
+
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-from-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+/* Delay the .lineRight animation */
+.lineLeft {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease-out 0.25s, transform 1s ease-out 0.25s;
+}
+.line {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0s ease-out 0.25s, transform 0s ease-out 0.25s;
+}
+
+
+
+/* Ensure all elements start hidden and animate in */
+.show {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-from-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Delay the .lineRight animation */
+.lineRight {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 1s ease-out 0.25s, transform 1s ease-out 0.25s;
+}
+
+/* Show animation when in view */
+.show {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+
+
+    
+</style>
+
+
 </head>
 <body>
-	<header class="cd-main-header text-center flex flex-column flex-center">
-    <h1>Responsive Vertical Timeline</h1>
-    <p class="margin-top-sm">👈<a class="color-inherit" href="https://codyhouse.co/gem/vertical-timeline/">Article &amp; Download</a></p>
-  </header>
 
-  <section class="cd-timeline js-cd-timeline">
-    <div class="container max-width-lg cd-timeline__container">
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/cd-icon-picture.svg" alt="Picture">
-        </div> <!-- cd-timeline__img -->
 
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 1</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+<!-- navigation -->
 
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 14</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
+<div id= "navbar">
+        <a href= "home.html" >
+        <img id="logo" src= "assets/img/personal_logo.svg" alt="CJD"> </a>
+    
+        <a href= "home.html#work">UX/UI </a>
+        
+        <a href= "resume.html">About me</a>
+        <div id="linkedIn">
+            <a href= "https://www.linkedin.com/in/christina-doolan-36b1a224a/" target =_blank>
+                <img id="linked" src= "assets/img/linkedin.png" alt= "linkedin">
+            </a>
+        </div>
+    </div> <!-- nav bar -->
 
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/cd-icon-movie.svg" alt="Movie">
-        </div> <!-- cd-timeline__img -->
 
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 2</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-          
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 18</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
 
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/cd-icon-picture.svg" alt="Picture">
-        </div> <!-- cd-timeline__img -->
+<!-- Hero section -->
 
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 3</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h2 id="quoteOne">From Pixels to People </h2>
+            <h1 id="name"> Christina Doolan </h1>
+            <h2 id="quoteTwo"> Designing with Purpose</h2>
+            
+            
+        </div>
+    </section> <!-- hero section -->
 
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 24</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
+<!-- intro section  -->
 
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
+ <div id="string">
+        <img id="stringImg" alt="" src="assets/img/string.svg">
 
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 4</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+         <h2 id="caseStudies" class="slide-from-left"> Hi There! </h2>
+<div class="line slide-from-left"></div>
+<h3 class="slide-from-left"> Welcome to my self-coded portfolio! Explore my UX/UI case studies below and see my approach to design and development.</h3>
 
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 14</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 5</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 18</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/cd-icon-movie.svg" alt="Movie">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Final Section</h2>
-          <p class="color-contrast-medium">This is the content of the last section</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 26</span>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
+        
     </div>
-  </section> <!-- cd-timeline -->
-  <script src="assets/js/main.js"></script>
-</body>
+
+    <script> 
+        document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".slide-from-left");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target); // Stop observing once revealed
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elements.forEach(element => observer.observe(element));
+});
+
+
+
+
+        window.addEventListener("scroll", function () {
+        const stringImage = document.getElementById("string");
+        const scrollPosition = window.scrollY;
+        const halfPage = window.innerHeight / 2;
+
+        if (scrollPosition > halfPage) {
+            stringImage.style.maskImage = "none";
+            stringImage.style.webkitMaskImage = "none";
+        } else {
+            stringImage.style.maskImage = "linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.3) 100%)";
+            stringImage.style.webkitMaskImage = "linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.3) 100%)";
+        }
+    });
+    </script>
+
+
+
+
+
+<!-- Case Studies section     -->
+
+   <!--  <div id="string">
+        
+
+         <h2 id="caseStudies"> CASE STUDIES </h2>
+         <h3> Welcome to my self-coded portfolio! Explore my UX/UI projects below and see my approach to design and development.</h3>
+         <h3> The Art of <span class= 'yellow'>Design </span>, the Science of <span class= 'yellow'>Understanding </span>– Where Psychology Shapes Seamless Experiences. </h3>
+    </div> -->
+
+
+
+
+
+<div id="work">
+
+    <div id="backgroundSection"></div>
+       
+   
+    <div class="twoSections">
+                
+       <div class="left slide-from-left"> 
+    <h1>Los Angeles Food Festival </h1> 
+
+    <div class="line lineLeft"></div>
+
+    <p> 2024 Design Case Study | React Mobile App Design</p><br> 
+    <h4> Experience the LA Food Festival like never before—seamless navigation, live updates, and everything you need at your fingertips.</h4> 
+    <form action="festival.html">
+        <button class="scbutton" type="submit"> View Project → </button> 
+    </form>
+</div><!-- left side -->
+
+
+
+        <div class="right">
+            <img class="halfImg" src= "assets/img/festivalMain.png" alt="HomepageImage">
+        </div> <!-- right side text -->
+
+    </div> <!-- La Food Festival section -->
+
+
+
+
+
+    <div id="backgroundSectionTwo"> </div>
+
+    <div class="twoSections">
+        <div class="left">
+            <img class="halfImg" src= "assets/img/computer.png" alt="HomepageImage">
+        </div> <!-- left side text -->
+        
+        <div class="rightTwo slide-from-right">
+    <h1>Bluebeam Software Pre-Portal </h1> 
+    <div class="lineRight"></div> <!-- The line animation will be delayed by 0.5s -->
+
+    <p> 2024 UX/UI & Design Intern - Customer Enablement</p><br> 
+    <h4> Reimagining Bluebeam’s Pre-portal training—where cluttered design meets its match. Smoother navigation, seamless branding, and an experience so intuitive, you’ll forget it was ever complicated.</h4> 
+    <form action="bluebeam.html">
+        <button class="scbutton" type="submit"> View Project → </button> 
+    </form>
+</div><!-- right side -->
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".slide-from-left, .slide-from-right, .line, .lineRight");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target.classList.contains("line") || entry.target.classList.contains("lineRight")) {
+                    setTimeout(() => {
+                        entry.target.classList.add("show");
+                    }, 500); // 0.5-second delay for lines
+                } else {
+                    entry.target.classList.add("show");
+                }
+                observer.unobserve(entry.target); // Stops observing after animating
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elements.forEach(element => observer.observe(element));
+});
+
+</script>
+                
+    </div> <!-- Bluebeam section -->
+   
+
+
+
+
+    <div id="backgroundSectionThree"> </div>
+
+    <div class="twoSections">
+                
+        <div class="left slide-from-left">
+            <h1>Sprout Finance </h1> 
+             <div class="line lineLeft"></div>
+            <p> 2024 Design Case Study |  Figma Mobile App Design</p><br> 
+            <h4> Sprout makes your money work for you—effortless tracking, smarter saving, and a financial future that grows with you.</h4> 
+            <form action="sprout.html">
+                <button class="scbutton" type="submit"> View Project → </button> 
+            </form>      
+        </div><!-- left side -->
+                
+
+        <div class="right">
+            <img class="halfImg" src= "assets/img/sproutMain.png" alt="HomepageImage">
+        </div> <!-- right side text -->
+    
+    </div> <!-- Sprout section -->
+
+    
+
+    <div id="backgroundSectionFour"> </div>
+
+    <div class="twoSections">
+        <div class="left">
+            <img class="halfImg" src= "assets/img/raviniaMain.png" alt="HomepageImage">
+        </div> <!-- left side text -->
+        
+        <div class="rightTwo slide-from-right">
+            <h1>Ravinia College Consulting</h1> 
+             <div class="lineRight"></div>
+            <p> 2023 - 2024 Lead Designer & Project Manager |  Website & Logo Redesign</p><br> 
+            <h4> The Ravinia College Consultant website overhaul cuts through the clutter, offering a sleek, mobile-friendly design and streamlined navigation—one less stressor in the already overwhelming college application process.</h4>
+                <form action="ravinia.html">
+                <button class="scbutton" type="submit"> View Project → </button> 
+            </form> 
+        </div><!-- right side -->
+                
+    </div> <!-- Ravinia section -->
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+    
+
+</body> 
 </html>
