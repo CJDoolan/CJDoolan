@@ -88,7 +88,7 @@ h2 {
 }
 
 #strip {
-    background-color: #FFCC49;
+    background-color: #0083DB;
     height:150px;
     display:flex;
     align-items: center;
@@ -102,11 +102,30 @@ h2 {
 }
 
 .sectionHeader {
-    
-    background-color: #FFCC49;
-    display:flex;
+    position: relative; /* Add this to make ::before position relative to this element */
+    background-image: url('bluebeam/bluePattern.png'); 
+    display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px; /* Ensure the height matches the overlay */
+    background-attachment: fixed;
+    color: white;
+    z-index: 0; /* Ensure it stays below content */
+    overflow: hidden; /* Prevents any content from overlapping unexpectedly */
+}
+
+.sectionHeader::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Match the section height */
+    background: rgba(0, 0, 0, 0.8); /* Overlay effect */
+    z-index: -1; /* Moves it behind the text */
 }
 .container {
             display: flex;

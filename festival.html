@@ -89,7 +89,7 @@ h2 {
 }
 
 #strip {
-    background-color: #F49B6D;
+    background-color:#af4237;
     height:150px;
     display:flex;
     align-items: center;
@@ -107,14 +107,32 @@ h2 {
 }
 
 .sectionHeader {
-    height: 350px;
-    background-color: #F49B6D;
-    display:flex;
+    position: relative; /* Add this to make ::before position relative to this element */
+    background-image: url('festival/orangePattern.png'); 
+    display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px; /* Ensure the height matches the overlay */
+    background-attachment: fixed;
+    color: white;
+    z-index: 0; /* Ensure it stays below content */
+    overflow: hidden; /* Prevents any content from overlapping unexpectedly */
 }
 
-          
+.sectionHeader::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Match the section height */
+    background: rgba(0, 0, 0, 0.8); /* Overlay effect */
+    z-index: -1; /* Moves it behind the text */
+}
+         
 
     .researchImg {
         max-width: 100%;

@@ -11,6 +11,12 @@ Portfolio_CDoolan_Festival
 
 <style>
 
+/*button styling */
+    .scbutton:hover {
+        background-color: #ffcc00;
+    }
+
+
 /* top section */
     .hero-section {
         position: relative;
@@ -28,25 +34,9 @@ Portfolio_CDoolan_Festival
           
 
     }
-    .hero-section::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 650px;
-        background: rgba(0, 0, 0, 0.7); /* Adjust opacity for better readability */
-    }
 
-    .hero-content {
-        position: relative; /* Keeps text above overlay */
-        z-index: 1;
-    }
-      #name {
-        margin: 0;
-        font-family: 'Darbots', sans-serif;
-         font-size: 8em;
-    }
+/*Two sections (role and challenege)   */
+
     .left {
         text-align: left;
         margin-left: 200px;
@@ -58,108 +48,119 @@ Portfolio_CDoolan_Festival
         margin-right: 200px;
         margin-top:100px;
     }
-h4 {
-    margin-bottom: 20px;
-}
-h2 {
-    font-family: 'AbangFashion', sans-serif;
-}
-.line {
-    width: 0;
-    height: 10px;
-    background-color: #EEC824;
-    animation: expand 1.5s ease-out forwards;
-    animation-delay: 0.6s; /* Delay ensures smooth appearance */
-}
-
-@keyframes expand {
-    from {
+    h4 {
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-family: 'AbangFashion', sans-serif;
+    }
+    .line {
         width: 0;
+        height: 10px;
+        background-color: #EEC824;
+        animation: expand 1.5s ease-out forwards;
+        animation-delay: 0.6s; /* Delay ensures smooth appearance */
     }
-    to {
-        width: 50px;
-    }
-}
 
-.heroContainer {
-    display: flex;
-    justify-content: center;  /* Centers horizontally */
-    align-items: center;      /* Centers vertically */
-    margin-top: -50px;
-    
-}
-
-#heroImg {
-    width:85vw;
-    justify-content: center;
-
-}
-
-#strip {
-    background-color: #A0DFDF;
-    height:150px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-.tag {
-    margin: 20px;
-}
-#banner {
-    margin-top: -75px;
-}
-
-.sectionHeader {
-    
-    background-color: #A0DFDF;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-.container {
-            display: flex;
-            width: 100%;
-            height: 600vh; /* For scrolling effect */
-            margin: 0;
-            /*margin-right: auto;
-            margin-left: auto;*/
-
+    @keyframes expand {
+        from {
+            width: 0;
         }
-
- .researchImg {
-        max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+        to {
+            width: 50px;
+        }
     }
 
+
+/*prototype image*/
+
+    .heroContainer {
+        display: flex;
+        justify-content: center;  /* Centers horizontally */
+        align-items: center;      /* Centers vertically */
+        margin-top: -50px;
+        
+    }
+
+    #heroImg {
+        width:85vw;
+        justify-content: center;
+
+    }
+
+
+/*process steps*/
+
+    #strip {
+        background-color:  #558B2F;
+       
+    }
+    #strip a:hover {
+        color: #0083DB;
+    }
+
+    .tag {
+        margin: 20px;
+    }
+    #banner {
+        margin-top: -75px;
+    }
+
+    .sectionHeader {
+        position: relative; /* Add this to make ::before position relative to this element */
+        background-image: url('sprout/greenPattern.png'); 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 250px; /* Ensure the height matches the overlay */
+        background-attachment: fixed;
+        color: white;
+        z-index: 0; /* Ensure it stays below content */
+        overflow: hidden; /* Prevents any content from overlapping unexpectedly */
+    }
+
+    .sectionHeader::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; /* Match the section height */
+        background: rgba(0, 0, 0, 0.8); /* Overlay effect */
+        z-index: -1; /* Moves it behind the text */
+    }
+        
+    }
+     .researchImg {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
 
     #updatedHome, #updatedLesson {
         width: 600px;
     }
-    #strip a:hover {
-            color: #0083DB;
-        }
 
-        .scbutton:hover {
-  background-color: #ffcc00;
-}
-        #sproutUserFlow {
-            margin-bottom: 50px;
-        }
+   
 
-        #prototype, #styleGuide {
-            text-align: center;
-             justify-content: center;
-       
-           display: block;
-            color: #333;
-            font-family: Arial, sans-serif;
-            font-size: 24px;
-            padding-top: 50px;
-        }
+    #sproutUserFlow {
+        margin-bottom: 50px;
+    }
 
-        #prototype img, #styleGuide img, #website img {
+    #prototype, #styleGuide {
+        text-align: center;
+        justify-content: center;
+        display: block;
+        color: #333;
+        font-size: 24px;
+        padding-top: 50px;
+    }
+
+    #prototype img, #styleGuide img, #website img {
             display: block;
             width: 100vw;
            

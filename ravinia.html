@@ -28,25 +28,41 @@ Portfolio_CDoolan_Festival
           
 
     }
-    .hero-section::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 650px;
-        background: rgba(0, 0, 0, 0.7); /* Adjust opacity for better readability */
-    }
 
-    .hero-content {
-        position: relative; /* Keeps text above overlay */
-        z-index: 1;
-    }
-      #name {
-        margin: 0;
-        font-family: 'Darbots', sans-serif;
-         font-size: 8em;
-    }
+/*banner*/
+  .sectionHeader {
+    position: relative; /* Add this to make ::before position relative to this element */
+    background-image: url('ravinia/bluePattern.png'); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px; /* Ensure the height matches the overlay */
+    background-attachment: fixed;
+    color: white;
+    z-index: 0; /* Ensure it stays below content */
+    overflow: hidden; /* Prevents any content from overlapping unexpectedly */
+}
+
+.sectionHeader::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Match the section height */
+    background: rgba(0, 0, 0, 0.3); /* Overlay effect */
+    z-index: -1; /* Moves it behind the text */
+}
+
+
+    
+
+
+/*Two sections (role and challenege)   */
+   
     .left {
         text-align: left;
         margin-left: 200px;
@@ -58,64 +74,63 @@ Portfolio_CDoolan_Festival
         margin-right: 200px;
         margin-top:100px;
     }
-h4 {
-    margin-bottom: 20px;
-}
-.line {
-    width: 0;
-    height: 10px;
-    background-color: #E45C08;
-    animation: expand 1.5s ease-out forwards;
-    animation-delay: 0.6s; /* Delay ensures smooth appearance */
-}
 
-@keyframes expand {
-    from {
+
+    h4 {
+        margin-bottom: 20px;
+    }
+
+
+    .line {
         width: 0;
+        height: 10px;
+        background-color: #E45C08;
+        animation: expand 1.5s ease-out forwards;
+        animation-delay: 0.6s; /* Delay ensures smooth appearance */
     }
-    to {
-        width: 50px;
-    }
-}
 
-
-#heroImg {
-    width:100vw;
-
-}
-
-#strip {
-    background-color: #C6DEFA;
-    height:150px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-.tag {
-    margin: 20px;
-}
-
-
-.container {
-            display: flex;
-            width: 100%;
-            height: 800vh; /* For scrolling effect */
-            margin: 0;
-            /*margin-right: auto;
-            margin-left: auto;*/
+    @keyframes expand {
+        from {
+            width: 0;
         }
+        to {
+            width: 50px;
+        }
+    }
 
-  #raviniaUserFlow {
+
+/*prototype image*/
+
+
+    #heroImg {
+        width:100vw;
+
+    }
+
+
+
+
+/*process steps*/
+
+    #strip {
+        background-color: #002366;
+        
+    }
+    #strip a:hover {
+        color: darkorange;
+        }
+   
+    #raviniaUserFlow {
             margin-bottom: 50px;
         }
 
-          #toggleLink {
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
-            font-size: 1.5em;
-            color: #FF7E36;
-         }
+    #toggleLink {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        font-size: 1.5em;
+        color: #FF7E36;
+        }
 
 
 </style>
@@ -127,7 +142,7 @@ h4 {
 
 <!-- navigation -->
 
-<div id= "navbar">
+    <div id= "navbar">
         <a href= "index.html" >
         <img id="logo" src= "assets/img/personal_logo.svg" alt="CJD"> </a>
     
@@ -139,7 +154,8 @@ h4 {
                 <img id="linked" src= "assets/img/linkedin.png" alt= "linkedin">
             </a>
         </div>
-    </div> <!-- nav bar -->
+    </div> 
+<!-- end of nav bar -->
 
 
 
@@ -149,41 +165,41 @@ h4 {
     <section class="hero-section">
         <div class="hero-content">
            
-            <h1 id="name"> Ravinia College <br>Consulting </h1>
-            
-            
-            
+            <h1 id="name"> Ravinia College <br>Consulting </h1> 
         </div>
-    </section> <!-- hero section -->
+    </section> 
+
+<!-- end of hero section -->
 
 
-<div class="twoSections">
+
+
+
+<!-- challenge and role section  -->
+
+    <div class="twoSections">
                 
         <div class="left">
             <h4> The Challenge </h4>
             <div class="line"></div>
 
             <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const line = document.querySelector(".line");
-    
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                line.style.animation = "expand 1.5s ease-out forwards";
-            }
-        });
-    });
+                document.addEventListener("DOMContentLoaded", function () {
+                const line = document.querySelector(".line");
+                const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        line.style.animation = "expand 1.5s ease-out forwards";
+                        }
+                    });
+                });
 
-    observer.observe(line);
-});
-</script>
+                observer.observe(line);
+                });
+            </script>
 
 
             <p >The Ravinia College Consultant website was cluttered, hard to navigate, and difficult to use on mobile. Its overwhelming color scheme and disorganized content made finding essential information a frustrating experience. To fix this, we introduced a sleek, responsive design, restructured key sections, and refined the homepage for better readability. Testimonials were categorized, and lengthy text blocks were broken down for a smoother user experience.</p> 
-
-            
-
             <p> 
             <strong>Duration: </strong>10 months (part-time)</p>
            
@@ -199,20 +215,23 @@ document.addEventListener("DOMContentLoaded", function () {
             <p> <strong>Tools:</strong> Figma, GoDaddy, Illustrator, HTML, CSS, & Javascript </p>
         </div> <!-- right side text -->
 
-    </div> <!-- La Food Festival section -->
+    </div> <!-- end of role and challenges section  -->
 
    
 
-<!-- 
-hero image section -->
 
-
-<img id="heroImg" src = "ravinia/RaviniaMain.png">
-
+<!-- hero image section -->
+    <img id="heroImg" src = "ravinia/RaviniaMain.png">
 
 
 
-<div id="strip">
+
+
+
+<!-- process section -->
+
+<!-- nav strip -->
+    <div id="strip">
         <a href="ravinia.html#screen">Screencap</a>
         
         <a href="ravinia.html#raviniaUserPersona">User Persona</a>
@@ -221,119 +240,115 @@ hero image section -->
         <a href="ravinia.html#raviniaWireframes">Wireframes</a>
         <a href="ravinia.html#codeSample">Code Snipit</a>
         
-    </div>
+    </div> <!-- end of nav strip -->
 
 
-<div id="screen">
-<video class="screencap" autoplay muted loop controls>
+
+
+    <div id="screen">
+        <video class="screencap" autoplay muted loop controls>
         <source src="ravinia/screenCapRavinia.mp4" type="video/mp4">
         Your browser does not support the video tag.
-    </video>
-  </div>
+        </video>
+    </div> <!-- end of screen cap -->
 
 
 
-<div class=sec3 id=raviniaSec3>
-    <div class=sectionHeader>
-        <h2> User Flow & User Persona </h2>
-    </div>
-    <div id="raviniaUserPersona">
-    <img class="userPersona" src="ravinia/raviniaUserPersona.svg" alt="face image">
-  </div>
+
+<!-- user flow and user persona -->
+
+    <div class=sec3 id=raviniaSec3>
+        <div class=sectionHeader>
+            <h2> User Flow & User Persona </h2>
+        </div>
+        <div id="raviniaUserPersona">
+            <img class="userPersona" src="ravinia/raviniaUserPersona.svg" alt="face image">
+        </div>
 
 
-    <div class="userFlow" id= "raviniaUserFlow">
-     <img id="userFlowImage" class="userFlowImg" src="ravinia/raviniaUserFlow.svg" alt="User Flow Image">
-  
-    <div id="link-container">
-        <a id="toggleLink" href="javascript:void(0);">Expand User Flow</a>
-    </div>
+        <div class="userFlow" id= "raviniaUserFlow">
+            <img id="userFlowImage" class="userFlowImg" src="ravinia/raviniaUserFlow.svg" alt="User Flow Image">
+                <div id="link-container">
+                    <a id="toggleLink" href="javascript:void(0);">Expand User Flow</a>
+                </div>
 
-    <script>
-             let isExpanded = false; // Flag to track if expanded
+                <script>
+                    let isExpanded = false; // Flag to track if expanded
 
-            function toggleImage() {
-                const img = document.getElementById('userFlowImage');
-                const link = document.getElementById('toggleLink');
-                
-                if (isExpanded) {
-                    img.src = 'ravinia/raviniaUserFlow.svg';
-                    link.textContent = 'Expand User Flow';
-                    isExpanded = false;
-                } else {
-                    img.src = 'ravinia/raviniaUserFlow.png';
-                    link.textContent = 'Condense User Flow';
-                    isExpanded = true;
-                }
-            }
+                    function toggleImage() {
+                        const img = document.getElementById('userFlowImage');
+                        const link = document.getElementById('toggleLink');
+                        
+                        if (isExpanded) {
+                            img.src = 'ravinia/raviniaUserFlow.svg';
+                            link.textContent = 'Expand User Flow';
+                            isExpanded = false;
+                        } else {
+                            img.src = 'ravinia/raviniaUserFlow.png';
+                            link.textContent = 'Condense User Flow';
+                            isExpanded = true;
+                        }
+                    }
 
-            document.getElementById('toggleLink').addEventListener('click', toggleImage);
-    </script>
+                    document.getElementById('toggleLink').addEventListener('click', toggleImage);
+                </script>
 
-  </div>
-    </div> 
-  <!-- end of user flows and personas section -->
+        </div>
+    </div> <!-- end of user flows and personas section -->
 
 
 
-<div class=sec5 id="raviniaWireframes">
-    <div class=sectionHeader>
-        <h2> Wireframes </h2>
-    </div>
-    <div class="secContent">
-    <h3> Lo-fi Designs </h3>
-    <div class="userFlow">
-    <img class="wireframeImg" src="ravinia/raviniaLofi.svg" alt="face image">
-  </div>
-  <h3> Mid-fi Designs </h3>
-    <div class="userFlow">
-    <img class="wireframeImg" src="ravinia/raviniaMidfi.svg" alt="face image">
-  </div>
-  <h3> High-fi Designs </h3>
-    <div class="userFlow">
-    <img class="wireframeImg" src="ravinia/raviniaHighfi.svg" alt="face image">
-  </div>
-    
-  </div>
-  </div> <!-- end of wireframes section -->
+
+<!-- wireframes section -->
+    <div class=sec5 id="raviniaWireframes">
+        <div class=sectionHeader>
+            <h2> Wireframes </h2>
+        </div>
+        <div class="secContent">
+            <h3> Lo-fi Designs </h3>
+            <div class="userFlow">
+                <img class="wireframeImg" src="ravinia/raviniaLofi.svg" alt="face image">
+            </div>
+            <h3> Mid-fi Designs </h3>
+            <div class="userFlow">
+                <img class="wireframeImg" src="ravinia/raviniaMidfi.svg" alt="face image">
+            </div>
+            <h3> High-fi Designs </h3>
+            <div class="userFlow">
+                <img class="wireframeImg" src="ravinia/raviniaHighfi.svg" alt="face image">
+            </div>
+        
+        </div>
+    </div> <!-- end of wireframes section -->
 
 
-<div id="codeSample">
-  <div class="sectionHeader">
+<!-- code sample section -->
+    <div id="codeSample">
+        <div class="sectionHeader">
             <h2>Sample HTML, CSS, & JavaScript Code</h2>
         </div>
-<div class="code">
-<iframe class="codee" src="ravinia/codeServices.txt"></iframe>
-<iframe class="codee" src="ravinia/codeTestimonials.txt"></iframe>
-</div>
-</div>
-
-
-  <div class="button-group">
-                <div class="sc-button">
-                    <form action="sprout.html">
-                        <button class="scbutton" type="submit"> ← Prev Project</button> 
-                    </form>
-                </div>
-                <div class="sc-button">
-                    <form action="festival.html">
-                            <button class="scbutton" type="submit"> Next Project → </button> 
-                    </form>
-                </div>
+        <div class="code">
+            <iframe class="codee" src="ravinia/codeServices.txt"></iframe>
+            <iframe class="codee" src="ravinia/codeTestimonials.txt"></iframe>
         </div>
+    </div> <!-- end of code sample -->
 
 
 
+<!-- next and previous buttons -->
+    <div class="button-group">
+        <div class="sc-button">
+            <form action="sprout.html">
+                <button class="scbutton" type="submit"> ← Prev Project</button> 
+            </form>
+        </div>
+        <div class="sc-button">
+            <form action="festival.html">
+                <button class="scbutton" type="submit"> Next Project → </button> 
+            </form>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-
-    
 
 </body> 
 </html>
