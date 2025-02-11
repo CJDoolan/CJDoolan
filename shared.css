@@ -12,6 +12,11 @@
         font-weight: normal;
         font-style: normal;
     }
+@font-face {
+        font-family: 'Darbots';
+        src: url('assets/fonts/Darbots-Regular.ttf') format('opentype');
+        font-weight: normal;
+       
 
 
 
@@ -22,7 +27,7 @@
     }
 
     h1 {
-         font-family: 'AbangFashion', system-ui;
+         font-family: 'Darbots', system-ui;
          font-size: 3.5em;
          word-spacing: -2px;
     }
