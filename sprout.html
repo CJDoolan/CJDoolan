@@ -2,7 +2,7 @@
 <html> 
 <head>
     <title>
-Portfolio_CDoolan_Festival
+        sprout
     </title>
 
      <meta name="description" content="Christina Doolan's design portfolio and Resume. Works include projects from executive eduction internship, innovation design club, Adobe, and more.">
@@ -132,8 +132,11 @@ Portfolio_CDoolan_Festival
         background: rgba(0, 0, 0, 0.8); /* Overlay effect */
         z-index: -1; /* Moves it behind the text */
     }
-        
+    #sproutUserPersona{
+        margin-top: 50px;
     }
+        
+    
      .researchImg {
         max-width: 100%;
         height: auto;
@@ -161,16 +164,15 @@ Portfolio_CDoolan_Festival
     }
 
     #prototype img, #styleGuide img, #website img {
-            display: block;
-            width: 100vw;
-           
-            margin: 10px auto 0;
-            padding-bottom: 50px;
-        }
-        .highFi img {
-            margin-top: 25px;
-            margin-bottom: 25px;
-        }
+        display: block;
+        width: 100vw;
+        margin: 10px auto 0;
+        padding-bottom: 50px;
+    }
+    .highFi img {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
 
 </style>
 
@@ -210,39 +212,38 @@ Portfolio_CDoolan_Festival
     </section> <!-- hero section -->
 
 
-<div class="twoSections">
+
+<!-- challenge and role sections -->
+
+    <div class="twoSections">
                 
         <div class="left">
             <h4> The Challenge </h4>
             <div class="line"></div>
 
             <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const line = document.querySelector(".line");
-    
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                line.style.animation = "expand 1.5s ease-out forwards";
-            }
-        });
-    });
+            document.addEventListener("DOMContentLoaded", function () {
+                const line = document.querySelector(".line");
+                
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            line.style.animation = "expand 1.5s ease-out forwards";
+                        }
+                    });
+                });
 
-    observer.observe(line);
-});
-</script>
+                observer.observe(line);
+            });
+            </script>
 
 
             <p >Managing personal finances can be overwhelming, with the need to track expenses, set savings goals, and understand spending habits. Users often struggle with complex, inefficient tools that don’t offer personalized insights or seamless integration with their financial accounts.</p> 
-
             
-
             <p> 
             <strong>Duration: </strong>5 weeks</p>
            
         </div> <!-- leftsection of home screen -->
-
-
 
         <div class="right">
             <h4> My Role </h4>
@@ -252,20 +253,20 @@ document.addEventListener("DOMContentLoaded", function () {
             <p> <strong>Tools:</strong> Figma & Illustrator </p>
         </div> <!-- right side text -->
 
-    </div> <!-- La Food Festival section -->
+    </div> <!-- end of role and challenges section  -->
 
    
 
-<!-- 
-hero image section -->
+<!-- hero image section -->
 
 <div class="heroContainer">
 <img id="heroImg" src = "sprout/sproutMain.png">
 </div>
 
 
+<!-- process section -->
 
-
+<!-- nav strip -->
     <div id="strip">
         <a href="sprout.html#prototype">Figma Prototype</a>
         <a href="sprout.html#sproutUserPersona">User Persona</a>
@@ -275,167 +276,152 @@ hero image section -->
        <!--  <a href="sprout.html#sproutUXProblems">UX/UI Problems and Solutions</a> -->
         <a href="sprout.html#sproutWireframes">Wireframes</a>
        
-    <a href="sprout.html#styleguide">Style Guide</a>
-     <a href="sprout.html#pageWebsite">One Page Website</a>
+        <a href="sprout.html#styleguide">Style Guide</a>
+         <a href="sprout.html#pageWebsite">One Page Website</a>
      </div> 
 
 
-
-<a id="prototype" href="https://www.figma.com/proto/dhyhpT9aG1GFMoKApSaMJR/Team-1---Financial-Literacy-(Copy)?page-id=50%3A2&node-id=200-1750&viewport=1207%2C276%2C0.19&t=xPcPetZxAwwCTROP-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=200%3A1750" target="_blank" rel="noopener noreferrer">
-    Open Figma Prototype
-    <img src= "sprout/figmaPrototype.png">
-</a>
+<!-- figma prototype -->
 
 
-<div class=sec3 id="sproutSec3">
-    <div class=sectionHeader>
-        <h2> User Flow & User Persona </h2>
-    </div>
-    </div>
-    <img class="userPersona" id="sproutUserPersona" src="sprout/sproutUserPersona.svg" alt="face image">
-  </div> <!-- end of user flows and personas section -->
-    <div class="userFlow" id="sproutUserFlow">
-     <img id="userFlowImage" class="userFlowImg" src="sprout/sproutUserFlow.svg" alt="User Flow Image">
-     <img id="userFlowImage" class="userFlowImg" src="sprout/sproutUserFlow1.svg" alt="User Flow Image">
-     <img id="userFlowImage" class="userFlowImg" src="sprout/sproutUserFlow2.svg" alt="User Flow Image">
-    </div>
+    <a id="prototype" href="https://www.figma.com/proto/dhyhpT9aG1GFMoKApSaMJR/Team-1---Financial-Literacy-(Copy)?page-id=50%3A2&node-id=200-1750&viewport=1207%2C276%2C0.19&t=xPcPetZxAwwCTROP-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=200%3A1750" target="_blank" rel="noopener noreferrer">
+        Open Figma Prototype
+        <img src= "sprout/figmaPrototype.png">
+    </a>
+
+
+<!-- user flow and user persona -->
+
+    <div class=sec3 id="sproutSec3">
+        <div class=sectionHeader>
+            <h2> User Flow & User Persona </h2>
+        </div>
+        <div>
+            <img class="userPersona" id="sproutUserPersona" src="sprout/sproutUserPersona.svg" alt="face image">
+        </div> <!-- end of user flows and personas section -->
+        <div class="userFlow" id="sproutUserFlow">
+            <img id="userFlowImage" class="userFlowImg" src="sprout/sproutUserFlow.svg" alt="User Flow Image">
+             <img id="userFlowImage" class="userFlowImg" src="sprout/sproutUserFlow1.svg" alt="User Flow Image">
+             <img id="userFlowImage" class="userFlowImg" src="sprout/sproutUserFlow2.svg" alt="User Flow Image">
+        </div>
+    </div> <!-- end of user flows and personas section -->
     
 
   
 
+<!-- ux/ui problems section -->
 
-
-    
-
-
-<div class="sec4" id="sproutUXProblems">
-    <div class="sectionHeader">
-        <h2>UX/UI Problems & Solutions</h2>
-    </div>
-    <div class="twoSections">
-                
-        <div class="left">
-            <h4> The Problem</h4>
-            <div class="line"></div>
+    <div class="sec4" id="sproutUXProblems">
+        <div class="sectionHeader">
+            <h2>UX/UI Problems & Solutions</h2>
+        </div>
+        <div class="twoSections">
+                    
+            <div class="left">
+                <h4> The Problem</h4>
+                <div class="line"></div>
 
             <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const line = document.querySelector(".line");
-    
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                line.style.animation = "expand 1.5s ease-out forwards";
-            }
-        });
-    });
+            document.addEventListener("DOMContentLoaded", function () {
+                const line = document.querySelector(".line");
+                
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            line.style.animation = "expand 1.5s ease-out forwards";
+                        }
+                    });
+                });
 
-    observer.observe(line);
-});
-</script>
+                observer.observe(line);
+                });
+            </script>
 
+                <p >During the design process of the app, several UX/UI challenges were identified during various usability tests. A lack of clarity regarding what features were clickable caused confusion, as buttons and static content were not visually distinct. Insufficient color contrast made certain elements hard to read, especially for users with visual impairments. Features lacked clear differentiation, blending into one another and reducing overall usability. The font choice didn’t convey the intended feel, and the design was perceived as too “Excel-like,” giving it a rigid and overly technical appearance. Additionally, there was an overload of information on some screens, which overwhelmed users and made navigation difficult. These issues were compounded by inconsistent design language and poor visual hierarchy, which further detracted from the app's usability and user experience.</p> 
 
-            <p >During the design process of the app, several UX/UI challenges were identified during various usability tests. A lack of clarity regarding what features were clickable caused confusion, as buttons and static content were not visually distinct. Insufficient color contrast made certain elements hard to read, especially for users with visual impairments. Features lacked clear differentiation, blending into one another and reducing overall usability. The font choice didn’t convey the intended feel, and the design was perceived as too “Excel-like,” giving it a rigid and overly technical appearance. Additionally, there was an overload of information on some screens, which overwhelmed users and made navigation difficult. These issues were compounded by inconsistent design language and poor visual hierarchy, which further detracted from the app's usability and user experience.</p> 
-
-            
-
-            <p> 
+                <p> 
             
            
-        </div> <!-- leftsection of home screen -->
+            </div> <!-- leftsection of home screen -->
 
-
-
-        <div class="right">
-            <h4> Solution </h4>
-            <div class="line"></div>
-            <p> To address these challenges, the app's design was revamped with a clear focus on improving usability and aesthetics. Interactive elements like buttons were redesigned to stand out distinctly, using visual cues like color, size, and corner radius. High-contrast color schemes were implemented to enhance readability and accessibility. Features were given unique visual identifiers and logical groupings to ensure clarity and reduce confusion. A more playful, approachable font was selected to align with the app’s goals and audience, moving away from the overly technical, spreadsheet-like feel. Information overload was resolved by organizing content into digestible chunks. Consistent design patterns and a strong visual hierarchy were established to guide users seamlessly through the interface, creating a more intuitive and user-friendly experience.</p>
+            <div class="right">
+                <h4> The Solution </h4>
+                <div class="line"></div>
+                    <p> To address these challenges, the app's design was revamped with a clear focus on improving usability and aesthetics. Interactive elements like buttons were redesigned to stand out distinctly, using visual cues like color, size, and corner radius. High-contrast color schemes were implemented to enhance readability and accessibility. Features were given unique visual identifiers and logical groupings to ensure clarity and reduce confusion. A more playful, approachable font was selected to align with the app’s goals and audience, moving away from the overly technical, spreadsheet-like feel. Information overload was resolved by organizing content into digestible chunks. Consistent design patterns and a strong visual hierarchy were established to guide users seamlessly through the interface, creating a more intuitive and user-friendly experience.</p>
 
             
-        </div> <!-- right side text -->
-
-   
-
-   
-  
-</div>
-
-
-    
-   
-   
+            </div> <!-- right side text -->
+        </div> <!-- end of ux/ui problems section -->
 
 
 
-<div class=sec5 id="sproutWireframes">
-    <div class=sectionHeader>
-        <h2> Wireframes </h2>
-   </div>
-    <div class="secContent"> 
-       
-    <h3> Lo-fi Wireframe </h3>
-    <div class="loFi">
-    <img class="wireframeImg" src="sprout/sproutLofi.svg" alt="face image">
-     <img class="wireframeImg" src="sprout/sproutLofi1.svg" alt="face image">
-      <img class="wireframeImg" src="sprout/sproutLofi2.svg" alt="face image">
-      
-    </div>
-  <h3> High-fi Designs </h3>
-    <div class="highFi">
-    <img class="wireframeImg" src="sprout/sproutHighfi.svg" alt="face image">
-     <img class="wireframeImg" src="sprout/sproutHighfi1.svg" alt="face image">
-      <img class="wireframeImg" src="sprout/sproutHighfi2.svg" alt="face image">
-       <img class="wireframeImg" src="sprout/sproutHighfi3.svg" alt="face image">
-  </div>
-</div>
+
+<!-- wireframes section -->
+
+    <div class=sec5 id="sproutWireframes">
+        <div class=sectionHeader>
+            <h2> Wireframes </h2>
+        </div>
+        <div class="secContent">   
+            <h3> Lo-fi Wireframe </h3>
+            <div class="loFi">
+                <img class="wireframeImg" src="sprout/sproutLofi.svg" alt="face image">
+                <img class="wireframeImg" src="sprout/sproutLofi1.svg" alt="face image">
+                <img class="wireframeImg" src="sprout/sproutLofi2.svg" alt="face image">
+          
+            </div>
+            <h3> Hi-fi Designs </h3>
+            <div class="highFi">
+                <img class="wireframeImg" src="sprout/sproutHighfi.svg" alt="face image">
+                <img class="wireframeImg" src="sprout/sproutHighfi1.svg" alt="face image">
+                <img class="wireframeImg" src="sprout/sproutHighfi2.svg" alt="face image">
+                <img class="wireframeImg" src="sprout/sproutHighfi3.svg" alt="face image">
+            </div>
+        </div>
 
 
-  </div> <!-- end of wireframes section -->
+    </div> <!-- end of wireframes section -->
 
-<div id="styleguide">
-  <div class="sectionHeader">
+
+<!-- styleguide -->
+
+    <div id="styleguide">
+      <div class="sectionHeader">
             <h2>Style Guide</h2>
         </div>
-<div id= styleGuide>
-  <img src= "sprout/colors.svg">
-  <img src= "sprout/typography.svg">
-</div>
-</div>
+        <div id= styleGuide>
+             <img src= "sprout/colors.svg">
+            <img src= "sprout/typography.svg">
+        </div>
+    </div>
 
-<div id="pageWebsite">
-  <div class="sectionHeader">
+
+<!-- website -->
+    <div id="pageWebsite">
+      <div class="sectionHeader">
             <h2>One Page Website</h2>
         </div>
-<div id= website>
-  <img src= "sprout/website.svg">
- 
-</div>
-</div>
-
-   <div class="button-group">
-                <div class="sc-button">
-                    <form action="bluebeam.html">
-                        <button class="scbutton" type="submit"> ← Prev Project</button> 
-                    </form>
-                </div>
-                <div class="sc-button">
-                    <form action="ravinia.html">
-                            <button class="scbutton" type="submit"> Next Project → </button> 
-                    </form>
-                </div>
+        <div id= website>
+             <img src= "sprout/website.svg">     
         </div>
+    </div>
 
 
 
 
-
-
-
-
-
-
-
-    
+<!-- next and previous buttons -->
+   <div class="button-group"> 
+        <div class="sc-button">
+            <form action="bluebeam.html">
+                <button class="scbutton" type="submit"> ← Prev Project</button> 
+            </form>
+        </div>
+        <div class="sc-button">
+            <form action="ravinia.html">
+                <button class="scbutton" type="submit"> Next Project → </button> 
+            </form>
+        </div>
+    </div>
 
 </body> 
 </html>

@@ -2,7 +2,7 @@
 <html> 
 <head>
     <title>
-Portfolio_CDoolan_Festival
+Ravinia
     </title>
 
      <meta name="description" content="Christina Doolan's design portfolio and Resume. Works include projects from executive eduction internship, innovation design club, Adobe, and more.">
@@ -25,40 +25,9 @@ Portfolio_CDoolan_Festival
         justify-content: center;
         color: white;
         text-align: center;
-          
-
     }
 
-/*banner*/
-  .sectionHeader {
-    position: relative; /* Add this to make ::before position relative to this element */
-    background-image: url('ravinia/bluePattern.png'); 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 250px; /* Ensure the height matches the overlay */
-    background-attachment: fixed;
-    color: white;
-    z-index: 0; /* Ensure it stays below content */
-    overflow: hidden; /* Prevents any content from overlapping unexpectedly */
-}
-
-.sectionHeader::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; /* Match the section height */
-    background: rgba(0, 0, 0, 0.3); /* Overlay effect */
-    z-index: -1; /* Moves it behind the text */
-}
-
-
-    
+   
 
 
 /*Two sections (role and challenege)   */
@@ -119,6 +88,39 @@ Portfolio_CDoolan_Festival
     #strip a:hover {
         color: darkorange;
         }
+
+
+
+/*banner*/
+  .sectionHeader {
+    position: relative; /* Add this to make ::before position relative to this element */
+    background-image: url('ravinia/bluePattern.png'); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px; /* Ensure the height matches the overlay */
+    background-attachment: fixed;
+    color: white;
+    z-index: 0; /* Ensure it stays below content */
+    overflow: hidden; /* Prevents any content from overlapping unexpectedly */
+}
+
+.sectionHeader::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Match the section height */
+    background: rgba(0, 0, 0, 0.3); /* Overlay effect */
+    z-index: -1; /* Moves it behind the text */
+}
+
+
+/*other process steps*/
    
     #raviniaUserFlow {
             margin-bottom: 50px;
@@ -313,7 +315,7 @@ Portfolio_CDoolan_Festival
             <div class="userFlow">
                 <img class="wireframeImg" src="ravinia/raviniaMidfi.svg" alt="face image">
             </div>
-            <h3> High-fi Designs </h3>
+            <h3> Hi-fi Designs </h3>
             <div class="userFlow">
                 <img class="wireframeImg" src="ravinia/raviniaHighfi.svg" alt="face image">
             </div>
