@@ -370,6 +370,9 @@
             font-size: 2em;
 
         }
+        .sectionHeader {
+        background-size: contain;
+        }
 
         
         .twoSections {
