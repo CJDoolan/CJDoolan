@@ -371,11 +371,11 @@
 
         }
         .sectionHeader, .heroSection {
-        background-size: contain;
+        background-size: contain !important;
         }
         #backgroundSection, #backgroundSectionTwo, #backgroundSectionThree, #backgroundSectionFour {
           
-            background-size: contain;
+            background-size: contain !important;
             
         }
 
