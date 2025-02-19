@@ -370,8 +370,13 @@
             font-size: 2em;
 
         }
-        .sectionHeader {
+        .sectionHeader, .heroSection {
         background-size: contain;
+        }
+        #backgroundSection, #backgroundSectionTwo, #backgroundSectionThree, #backgroundSectionFour {
+          
+            background-size: contain;
+            
         }
 
         
