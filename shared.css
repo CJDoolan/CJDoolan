@@ -152,6 +152,37 @@
         height: 40px; 
     }
 
+/* Mobile styles */
+    @media (max-width: 768px) {
+        #navbar {
+            flex-direction: column;
+            align-items: center;
+           
+        }
+
+        #navbar > a {
+            width: 100%; /* Make the links full-width for better touch targets */
+            height: auto;
+            line-height: 20px; /* Adjust the line height for better spacing */
+            margin: 5px 0;
+            font-size: .75em;
+        }
+
+        #logo {
+            height: 30px;
+            float: none;
+        }
+
+        #linkedIn {
+            display: none;
+        }
+        
+        /* Optionally hide LinkedIn icon on small screens if needed */
+        /* #linkedIn {
+            display: none;
+        } */
+    }
+
 
 
 /*projects top section styling*/

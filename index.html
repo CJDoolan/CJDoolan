@@ -194,9 +194,7 @@
      
 /* mobile phones */
     @media only screen and (max-width: 768px){
-        body {
-            background-color: red !important;
-        }
+        
         .hero-section {
             background-size: cover !important; 
             background-position: center center !important;
@@ -205,12 +203,40 @@
         }
         #quoteOne, #quoteTwo {
             margin-left: 0px !important;
+            font-size: 1.5em !important;
         }
-        #string { /* Fixed typo from #sring to #string */
+        #name {
+            font-size: 3em !important;
+        }
+        #stringImg { 
              display: none !important;
         }
+        #string {
+            position: static;
+            transform: translateX(-0%);
+            margin-top: 100px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        #work {
+            margin-top: 100px;
+        }
+        .left, .rightTwo {
+            margin: 25px;
+        }
+        
+        h1 {
+            font-size: 1.5em;
+        }
+        h4, h3 {
+            font-size: 1em;
+        }
         .twoSections {
-            display: contents !important;
+        display: contents !important;
+        }
+
+        .halfImg {
+            width: 100%;
         }
         .scbutton {
             width: 80vw !important;
@@ -355,6 +381,8 @@
         </div>
     </section> <!-- hero section -->
 
+
+
 <!-- intro section  -->
 
  <div id="string">
@@ -400,7 +428,6 @@
         }
     });
     </script>
-
 
 
 
