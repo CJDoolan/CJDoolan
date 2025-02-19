@@ -123,9 +123,34 @@
   }
 
   @media (max-width: 768px) {
-      .container {
-          flex-direction: column;
-      }
+     
+    .container1 {
+        display: flex;                  /* Use flexbox for alignment */
+        flex-direction: column;         /* Stack the items vertically */
+        justify-content: center;        /* Center items vertically */
+        align-items: center;            /* Center items horizontally */
+        gap: 15px;                      /* Add spacing between the role-boxes */
+    }
+
+    .role-box {
+        text-align: center;             /* Ensure text inside is centered */
+        width: 100%;                    /* Optional: Adjust width for mobile */
+        max-width: 300px;               /* Optional: Prevent excessive stretching */
+    }
+
+    .icon {
+        display: block;                 /* Ensure images do not have inline spacing issues */
+        margin: 0 auto;                 /* Center align the image */
+    }
+
+      #skills img {
+        width: 100% !important;
+       
+    }
+    .right {
+        width: 100%;
+        height: 0vh;
+    }
   }
 
 
@@ -232,15 +257,15 @@
             <p class="role">UX/UI Designer</p>
         </div>
         <div class="role-box" id="visual-designer">
-            <div class="icon"><img class="icon"src="assets/img/icon.png"></div>
+            <div class="icon"><img class="icon"src="assets/img/icon2.png"></div>
             <p class="role">Front End Developer</p>
         </div>
         <div class="role-box" id="ux-researcher">
-            <div class="icon"><img class="icon"src="assets/img/icon.png"></div>
+            <div class="icon"><img class="icon"src="assets/img/icon3.png"></div>
             <p class="role">Visual Designer</p>
         </div>
         <div class="role-box" id="ux-ui-designer">
-            <div class="icon"><img class="icon"src="assets/img/icon.png"></div>
+            <div class="icon"><img class="icon"src="assets/img/icon4.png"></div>
             <p class="role">UX Researcher</p>
         </div>
     </div>

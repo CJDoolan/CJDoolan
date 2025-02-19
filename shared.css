@@ -152,37 +152,6 @@
         height: 40px; 
     }
 
-/* Mobile styles */
-    @media (max-width: 768px) {
-        #navbar {
-            flex-direction: column;
-            align-items: center;
-           
-        }
-
-        #navbar > a {
-            width: 100%; /* Make the links full-width for better touch targets */
-            height: auto;
-            line-height: 20px; /* Adjust the line height for better spacing */
-            margin: 5px 0;
-            font-size: .75em;
-        }
-
-        #logo {
-            height: 30px;
-            float: none;
-        }
-
-        #linkedIn {
-            display: none;
-        }
-        
-        /* Optionally hide LinkedIn icon on small screens if needed */
-        /* #linkedIn {
-            display: none;
-        } */
-    }
-
 
 
 /*projects top section styling*/
@@ -358,6 +327,65 @@
     }
     .prev:hover, .next:hover {
       background-color: #faaa8d;
+    }
+
+
+
+
+
+/* Mobile styles */
+    @media (max-width: 768px) {
+        #navbar {
+            flex-direction: column;
+            align-items: center;
+           
+        }
+
+        #navbar > a {
+            width: 100%; /* Make the links full-width for better touch targets */
+            height: auto;
+            line-height: 20px; /* Adjust the line height for better spacing */
+            margin: 5px 0;
+            font-size: .75em;
+        }
+
+        #logo {
+            height: 30px;
+            float: none;
+        }
+
+        #linkedIn {
+            display: none;
+        }
+        
+        #name {
+            font-size: 3em !important;
+        }
+         .left, .rightTwo, .right {
+            margin: 25px !important;
+            margin-left: 25px !important;
+        }
+        
+        h1, h2, h3 {
+            font-size: 2em;
+
+        }
+
+        
+        .twoSections {
+        display: contents !important;
+        }
+
+        .halfImg {
+            width: 100%;
+        }
+        .scbutton {
+            width: 80vw !important;
+            height: 75px !important;
+        }
+        #strip{
+            display: none !important;
+        }
     }
 
 

@@ -133,6 +133,35 @@ Bluebeam
     .scbutton:hover {
         background-color: #ffcc00;
     }
+
+
+
+@media only screen and (max-width: 768px) {
+    .button-group {
+        display: flex !important;       /* Use flexbox to align the buttons */
+        flex-direction: column;         /* Stack the buttons vertically */
+        justify-content: center;        /* Center buttons vertically within the group */
+        align-items: center;            /* Center buttons horizontally */
+        gap: 15px;                       /* Adds margin between the buttons */
+        margin-top: 20px;                /* Optional: Adds top margin for spacing */
+    }
+
+    .sc-button {
+        width: 100%;                     /* Make buttons full-width (optional) */
+        text-align: center;              /* Ensure button text is centered */
+    }
+
+    /* Remove absolute positioning for prev/next buttons on mobile */
+    .prev, .next {
+        position: static !important;     /* Reset absolute positioning */
+        margin: 10px 0;                  /* Add margin for spacing between buttons */
+    }
+    h2 {
+        text-align: center;  
+    }
+   
+}
+
        
 </style>
 
@@ -216,7 +245,7 @@ Bluebeam
             <div class="line"></div>
             <p> As the Lead Web Developer & Co-Web Designer, I played a key role in revamping the interface, ensuring a sleek, intuitive design that simplifies the user journey. I focused on enhancing accessibility, streamlining navigation, and implementing a design system that brings consistency and clarity to Bluebeam’s educational platforms.</p>
 
-            s<p> <strong>Tools:</strong> Figma, Skilljar, Illustrator, CSS, & JQuery </p>
+            <p> <strong>Tools:</strong> Figma, Skilljar, Illustrator, CSS, & JQuery </p>
         </div> <!-- end of role and challenges section  -->
 
     </div> <!-- La Food Festival section -->
